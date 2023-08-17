@@ -44,7 +44,7 @@ header {
 
 #logo {
     width: 100%;
-    height: 70%;
+    height: 60%;
     object-fit: contain;
     opacity: 90%;
 }
@@ -60,21 +60,3 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
-
-
-
-/*<div class="banner">
-    <p>Free shipping on orders above £ 120</p>
-</div>
-<header>
-    <figure class="logo-container">
-        <img src="/IMG/logo.png" alt="">
-    </figure>
-
-    <nav class="nav-header">
-        <a class="nav-item" href="#">HOME</a>
-        <a class="nav-item" href="#">SHOP</a>
-        <a class="nav-item" href="#">ABOUT</a>
-        <a class="nav-item" href="#">CONTACT</a>
-    </nav>
-</header>

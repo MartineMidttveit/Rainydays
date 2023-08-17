@@ -13,6 +13,7 @@ async function getJackets() {
                 <h3 class="small-title">${jackets[index].title}</h3>
                 <p class="price">${jackets[index].price}</p>
                 <p class="gender">${jackets[index].gender}</p>
+                <button class="dark-green-btn">BUY NOW</button>
             </div>
             </a>
         </div>`
