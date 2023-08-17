@@ -1,0 +1,178 @@
+.sectionOne {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.sectionOne img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 24%;
+    left: 10%;
+    width: 23%;
+}
+
+/* CARDS */
+
+.sectionTwo {
+    width: 100%;
+    height: fit-content;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+figure {
+    margin: 0;
+}
+
+#arrow-right {
+    height: 15px;
+    width: 47px;
+}
+
+.section-title:hover #arrow-right {
+    transition: .5s;
+    animation: animate 1s infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(25px);
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    grid-template-rows: 350px;
+    width: 100%;
+    padding: 3% 0%;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: .5s ease-in-out;
+    border-radius: 25px;
+  }
+  
+  .card:hover {
+    transform: translateY(10px);
+    transition: .3s;
+  }
+  
+  .card:before,
+  .card img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+  
+  .card:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 25px;
+    background: rgba(35, 63, 63, 0.30);
+    backdrop-filter: blur(8px);
+    z-index: 2;
+    transition: .5s all;
+    opacity: 0;
+  }
+  
+  .card:hover:before {
+    opacity: 1;
+    border-radius: 25px;
+  }
+  
+  .card img {
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .card .card-info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+  }
+  
+  .card:hover .card-info {
+    opacity: 1;
+  }
+
+  .card:hover .small-title {
+    font-size: 1.5rem;
+    transition: .5s;
+  }
+
+/**/
+
+  .sectionThree {
+    background-color: #F2F2F2;
+    padding: 3% 10%;
+    display: flex;
+  }
+
+  .sectionThree img {
+    height: 400px;
+    width: 50%;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+/**/
+
+  .sectionFour {
+    background-color: #d8dfde;
+    padding: 3% 10%;
+    display: flex;
+  }
+
+/**/
+
+.sectionFive {
+    background-color: #F2F2F2;
+    height: 500px;
+}
+
+.sectionSix {
+    background-image: url(/IMG/forrest.png);
+    background-size: 100%;
+    height: 500px;
+}
+

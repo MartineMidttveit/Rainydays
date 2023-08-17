@@ -1,0 +1,77 @@
+html {
+    background-color: #BED8D5;
+    font-size: 18px;
+    color: hsl(0, 0%, 95%);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1800px;
+    background-color: #d8dfde;
+}
+
+/* FONTS */
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}
+
+.big-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+}
+
+.medium-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #233F3F;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.small-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* BUTTONS */
+
+.stroke-btn {
+    width: fit-content;
+    max-width: 160px;
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 3% 6%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    display: inline-block;
+    color: hsl(0, 0%, 95%);
+}
+
+.stroke-btn:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: #233F3F;
+    font-weight: 600;
+    transform: scale(1.1);
+    transition: .5s;
+}
