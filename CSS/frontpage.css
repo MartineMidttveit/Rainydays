@@ -18,6 +18,11 @@
     width: 23%;
 }
 
+.big-title {
+  display: flex;
+  flex-direction: column;
+}
+
 /* CARDS */
 
 .sectionTwo {
