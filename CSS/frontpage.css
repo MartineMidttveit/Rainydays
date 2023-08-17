@@ -60,7 +60,7 @@ figure {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     grid-template-rows: 350px;
     width: 100%;
@@ -86,6 +86,10 @@ figure {
     transition: .5s ease-in-out;
     border-radius: 25px;
   }
+
+.card .green-btn {
+  box-shadow: 0px 4px 150px 0px #1c2927;
+}
   
   .card:hover {
     transform: translateY(10px);
@@ -106,8 +110,8 @@ figure {
     position: absolute;
     display: block;
     border-radius: 25px;
-    background: rgba(35, 63, 63, 0.30);
-    backdrop-filter: blur(8px);
+    background: rgba(190, 216, 213, 0.20);
+    backdrop-filter: blur(5px);
     z-index: 2;
     transition: .5s all;
     opacity: 0;
@@ -134,45 +138,74 @@ figure {
     opacity: 1;
   }
 
-  .card:hover .small-title {
-    font-size: 1.5rem;
-    transition: .5s;
-  }
-
 /**/
 
-  .sectionThree {
-    background-color: #F2F2F2;
+  .sectionTree {
+    background-color: #DEE2E2;
     padding: 3% 10%;
     display: flex;
   }
 
-  .sectionThree img {
-    height: 400px;
-    width: 50%;
-    border-radius: 25px;
-    object-fit: cover;
-    object-position: top;
-  }
-
 /**/
 
-  .sectionFour {
-    background-color: #d8dfde;
-    padding: 3% 10%;
-    display: flex;
-  }
+.sectionFour {
+  padding: 5% 10%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: #FEFDFD;
+  color: #233F3F;
+}
+
+.sectionFour img {
+  height: 500px;
+  width: 40%;
+  border-radius: 25px;
+  object-fit: contain;
+  object-position: top;
+}
+
+.container {
+  width: 60%;
+}
+
+.container p {
+  width: 78%;
+  font-weight: 400;
+  padding: 2% 0%;
+}
+
+li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.container .dark-green-btn {
+  margin-top: 4%;
+}
 
 /**/
 
 .sectionFive {
     background-color: #F2F2F2;
-    height: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 10%;
 }
+
+.sectionFive .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/**/
 
 .sectionSix {
     background-image: url(/IMG/forrest.png);
     background-size: 100%;
     height: 500px;
 }
+
 

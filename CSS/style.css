@@ -15,7 +15,7 @@ html {
 body {
     margin: 0 auto;
     max-width: 1800px;
-    background-color: #d8dfde;
+    background-color: #F8F8F8;
 }
 
 /* FONTS */
@@ -55,17 +55,27 @@ p {
 
 /* BUTTONS */
 
+.stroke-btn,
+.green-btn,
+.dark-green-btn {
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    display: inline-block;
+    color: hsl(0, 0%, 95%);
+    border: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .stroke-btn {
     width: fit-content;
     max-width: 160px;
     border: 1px solid hsl(0, 0%, 95%);
     background-color: transparent;
-    border-radius: 30px;
     padding: 3% 6%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: .9rem;
-    display: inline-block;
-    color: hsl(0, 0%, 95%);
 }
 
 .stroke-btn:hover {
@@ -74,4 +84,25 @@ p {
     font-weight: 600;
     transform: scale(1.1);
     transition: .5s;
+}
+
+.green-btn,
+.dark-green-btn {
+    width: 140px;
+}
+
+.green-btn {
+    background-color: #BED8D5;
+    color: #233F3F;
+    font-weight: 600;
+}
+
+.green-btn:hover,
+.dark-green-btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.dark-green-btn {
+    background-color: #233F3F;
 }
