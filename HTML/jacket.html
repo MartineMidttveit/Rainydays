@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest digital games with GameHub - the universe of games">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/frontpage.css">
+    <link rel="stylesheet" href="/CSS/jacket.css">
+
+    <title>RainyDays | Home</title>
+  </head>
+<body>
+
+<div class="banner">
+    <p>Free shipping on orders above £ 120</p>
+</div>
+<header>
+    <figure class="logo-container">
+        <a href="/index.html"><img src="/IMG/logo.png" alt="" id="logo"></a>
+    </figure>
+
+    <nav class="nav-header">
+        <a class="nav-item" href="#">SHOP</a>
+        <a class="nav-item" href="#">ABOUT</a>
+        <a class="nav-item" href="#">CONTACT</a>
+        <a class="nav-item" href="#">FAVORITES</a>
+    </nav>
+</header>
+
+<main>
+    <section class="product-container">
+        <div class="product-images">
+
+            <div class="thunderbolt">
+                <img src="/IMG/jacket.png" alt="" id="thunderbolt-jacket">
+            </div>
+
+            <div class="small-img">
+                <img src="/IMG/product-img.png" alt="" id="img-1">
+                <img src="/IMG/product-img2.png" alt="" id="img-2">
+                <img src="/IMG/product-img3.png" alt="" id="img-3">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <img src="/IMG/logo.png" alt="" id="small-logo">
+            <h1 class="medium-title">${jacket.title}</h1>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Based on 4 reviews</p>
+                </div>
+
+                <p>${jacket.description}</p>
+                <div class="colors">
+                    <p>Select a color:</p>
+                        <div class="circles">
+                        <span class="circle" id="color-1"></span>
+                        <span class="circle" id="color-2"></span>
+                        <span class="circle" id="color-3"></span>
+                    </div>
+                </div>
+
+            <label for="sizes">Choose a size:</label>
+            <input list="sizes" id="sizes" name="sizes" />
+                <datalist id="sizes">
+                    <option value="X-Small"></option>
+                    <option value="Small"></option>
+                    <option value="Medium"></option>
+                    <option value="Large"></option>
+                    <option value="X-Large"></option>
+                </datalist>
+            </form>
+        </div>
+    </section>
+</main>
+
+<script src="/JS/jacket.js"></script>
+
+<footer></footer>
+
+</body>
+</html>
