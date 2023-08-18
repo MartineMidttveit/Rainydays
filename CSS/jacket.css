@@ -113,3 +113,30 @@
 #color-3 {
     background-color: black;
 }
+
+
+/* DATALIST */
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #233F3F;
+}
+
+input {
+    width: 20%;
+}
+
+
+
+
+
+/* <label for="sizes">Choose a size:</label>
+            <input list="sizes" id="sizes" name="sizes" />
+                <datalist id="sizes">
+                    <option value="X-Small"></option>
+                    <option value="Small"></option>
+                    <option value="Medium"></option>
+                    <option value="Large"></option>
+                    <option value="X-Large"></option>
+                </datalist>
