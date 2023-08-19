@@ -121,10 +121,14 @@ label {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #233F3F;
+    display: flex;
+    flex-direction: column;
 }
 
-input {
+#sizes {
     width: 20%;
+    margin-top: 2%;
+    padding-left: 3%;
 }
 
 
