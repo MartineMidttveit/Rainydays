@@ -6,6 +6,7 @@
     background-color: #FEFDFD;
     padding: 4% 10%;
     display: flex;
+    gap: 6rem;
 }
 
 .product-images {
@@ -59,6 +60,10 @@
     color: #233F3F;
 }
 
+.prod-info {
+    width: 76%;
+}
+
 #small-logo {
     height: 70px;
     width: 140px;
@@ -103,7 +108,7 @@
 }
 
 #color-1 {
-    background-color: turquoise;
+    background-color: #02B1FF;
 }
 
 #color-2 {
