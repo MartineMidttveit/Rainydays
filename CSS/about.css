@@ -1,3 +1,5 @@
+/* TOP */
+
 main {
     position: relative;
     top: 200px;
@@ -18,6 +20,8 @@ main {
 .about-top .dark-green-btn {
     margin-top: 1.5%;
 }
+
+/* MIDDLE */
 
 .about {
     display: flex;
@@ -52,4 +56,49 @@ main {
 
 .small-signature {
     margin: 0;
+}
+
+/* BOTTOM */
+
+.visit {
+    padding: 5% 10% 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#stores {
+    width: 45%;
+    padding-left: 10%;
+}
+
+#stores .big-title {
+    display: flex;
+    flex-direction: column;
+}
+
+#stores p {
+    width: 75%;
+}
+
+#stores p span {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+#stores .dark-green-btn {
+    margin-top: 6%;
+}
+
+#lofoten {
+    width: 50%;
+    align-items: flex-end;
+}
+
+#lofoten img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
 }
