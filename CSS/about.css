@@ -68,8 +68,8 @@ main {
 }
 
 #stores {
-    width: 45%;
-    padding-left: 10%;
+    width: 40%;
+    padding-left: 12%;
 }
 
 #stores .big-title {
@@ -78,7 +78,7 @@ main {
 }
 
 #stores p {
-    width: 75%;
+    width: 90%;
 }
 
 #stores p span {
@@ -91,13 +91,13 @@ main {
 }
 
 #lofoten {
-    width: 50%;
+    width: 53%;
     align-items: flex-end;
 }
 
 #lofoten img {
     width: 100%;
-    max-height: 400px;
+    max-height: 380px;
     object-fit: cover;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
