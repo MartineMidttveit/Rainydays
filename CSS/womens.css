@@ -14,13 +14,17 @@ main {
     width: 60%;
 }
 
+.hero-text .big-title {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero-text h1 span {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
 .hero-text {
-    background-color: #DEE2E2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,10 +71,10 @@ button {
 }
 
 .filter {
-    height: fit-content;
+    height: 100%;
     background: #F8F8F8;
-    width: 25%;
-    padding: 8% 0% 8% 10%;
+    width: 28%;
+    padding: 8% 0% 22% 10%;
 }
 
 .filter > div {
@@ -84,6 +88,13 @@ ul {
 ul li {
     list-style: none;
     padding: 2% 0%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .filter .small-title {
@@ -118,44 +129,24 @@ ul li {
     border: 1px solid rgba(35, 63, 63, 0.40);
 }
 
+/* SHOP-GRID */
 
+.product-list {
+    width: 72%;
+    height: 100%;
+    padding: 8% 10% 8% 4%;
+    grid-template-rows: repeat(4, 420px);
+    position: unset;
+}
 
+.product-list img {
+    max-height: 210px;
+}
 
+.product-info {
+    height: fit-content;
+}
 
-/*
-<!--FILTER-->
-
-    <div class="filter-3">
-        <h3 class="small-title">SIZES</h3>
-        
-        <div class="size">
-            <input type="checkbox" id="size1" name="size1" value="X-Small">
-            <label for="size1">X-Small</label>
-        </div>
-
-        <div class="size">
-            <input type="checkbox" id="size2" name="size2" value="X-Small">
-            <label for="size2">Small</label>
-        </div>
-
-        <div class="size">
-            <input type="checkbox" id="size3" name="size3" value="X-Small">
-            <label for="size3">Medium</label>
-        </div>
-
-        <div class="size">
-            <input type="checkbox" id="size4" name="size4" value="X-Small">
-            <label for="size4">Large</label>
-        </div>
-
-        <div class="size">
-            <input type="checkbox" id="size5" name="size5" value="X-Small">
-            <label for="size5">X-Large</label>
-        </div>
-    </div> */
-
-    .shop-grid {
-        width: 80%;
-        height: fit-content;
-        background-color: #DEE2E2;
-    }
+.product-info .small-title {
+    font-size: .7rem;
+}
