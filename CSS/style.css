@@ -1,7 +1,7 @@
 html {
     background-color: #BED8D5;
     font-size: 18px;
-    color: hsl(0, 0%, 95%);
+    color: #233F3F;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 
 a {
     text-decoration: none;
-    color: hsl(0, 0%, 95%);
+    color: #233F3F;
 }
 
 .big-title {
@@ -37,7 +37,6 @@ a {
 
 .medium-title {
     font-family: 'Montserrat', sans-serif;
-    color: #233F3F;
     font-weight: 500;
     font-size: 1.3rem;
 }
