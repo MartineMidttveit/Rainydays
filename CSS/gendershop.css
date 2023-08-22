@@ -73,8 +73,8 @@ button {
 .filter {
     height: 100%;
     background: #F8F8F8;
-    width: 28%;
-    padding: 8% 0% 17% 10%;
+    width: 22%;
+    padding: 8% 0% 28% 10%;
 }
 
 .filter > div {
@@ -132,9 +132,9 @@ ul li:hover {
 /* SHOP-GRID */
 
 .product-list {
-    width: 72%;
+    width: 78%;
     height: 100%;
-    padding: 8% 10% 0% 4%;
+    padding: 8% 10% 5% 4%;
     grid-template-rows: repeat(4, 420px);
     position: unset;
     gap: 1.8rem;
@@ -149,5 +149,5 @@ ul li:hover {
 }
 
 .product-info .small-title {
-    font-size: .7rem;
+    font-size: .9rem;
 }
