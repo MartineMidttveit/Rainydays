@@ -95,7 +95,8 @@ ul li {
 }
 
 .size,
-.color {
+.color,
+.activity {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -106,6 +107,7 @@ ul li {
 
 #size1,
 #color1,
+#activity1,
 .first-label {
     margin-top: 12%;
 }
