@@ -12,6 +12,7 @@ main {
 
 .hero-section img {
     width: 60%;
+    border-radius: 0px 0px 25px 0px;
 }
 
 .hero-text .big-title {
@@ -40,13 +41,29 @@ main {
 .sort-by {
     background-color: #F8F8F8;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: .5% 10%;
-    gap: 1.5rem;
     align-items: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position: absolute;
     width: 100%
+}
+
+.navigation {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.underline {
+    border-bottom: 1px solid rgba(35, 63, 63, 0.45);
+}
+
+.sorting-selection {
+    display: flex;
+    gap: 1.5rem;
 }
 
 button {
@@ -150,4 +167,8 @@ ul li:hover {
 
 .product-info .small-title {
     font-size: .9rem;
+}
+
+.product {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
 }
