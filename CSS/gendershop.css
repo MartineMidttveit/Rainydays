@@ -74,7 +74,7 @@ button {
     height: 100%;
     background: #F8F8F8;
     width: 28%;
-    padding: 8% 0% 22% 10%;
+    padding: 8% 0% 17% 10%;
 }
 
 .filter > div {
@@ -134,9 +134,10 @@ ul li:hover {
 .product-list {
     width: 72%;
     height: 100%;
-    padding: 8% 10% 8% 4%;
+    padding: 8% 10% 0% 4%;
     grid-template-rows: repeat(4, 420px);
     position: unset;
+    gap: 1.8rem;
 }
 
 .product-list img {
