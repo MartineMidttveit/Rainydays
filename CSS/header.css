@@ -39,6 +39,7 @@ header {
     width: 10%;
     height: 100%;
     margin-left: 10%;
+    margin-right: 5%;
 }
 
 .logo-container a {
@@ -83,6 +84,7 @@ header {
     align-items: center;
     padding-right: 4rem;
     position: relative;
+    padding-left: 2%;
 }
 
 .search-bar input {

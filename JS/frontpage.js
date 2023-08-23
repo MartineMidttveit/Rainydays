@@ -3,7 +3,7 @@ async function getJackets() {
     const jackets = await fetchJackets.json();
     let display = "";
 
-    for (let index = 0; index <= 2; index++) {
+    for (let index = 0; index <= 3; index++) {
         display +=
         `<div class="product">
             <i class="fa-regular fa-heart" id="favorite"></i>

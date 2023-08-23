@@ -18,6 +18,12 @@ body {
     background-color: #F8F8F8;
 }
 
+main {
+    position: relative;
+    top: 140px;
+}
+  
+
 /* FONTS */
 
 h1, h2, h3, h4 {
@@ -108,6 +114,47 @@ p {
 
 /* FORMS / INPUT */
 
-input::placeholder {
-    color: #80a3ab;
+input::placeholder,
+input {
+    color: #233F3F;
+    opacity: 80%;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    p, li {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
+    .big-title {
+      font-size: 1.8rem;
+    }
+
+    .medium-title {
+        font-size: 1.2rem;
+    }
+
+    .small-title {
+        font-size: 1rem;
+    }
+  }
+
+/*
+.big-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+}
+
+.medium-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.small-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+*/

@@ -1,12 +1,7 @@
 /* TOP */
 
-main {
-    position: relative;
-    top: 200px;
-}
-
 .about-top {
-    padding: 3% 25% 6%;
+    padding: 6.5% 25%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -25,10 +20,16 @@ main {
 
 .about {
     display: flex;
-    padding: 6% 20%;
+    padding: 7% 20% 8%;
     align-items: center;
     gap: 5rem;
     background-color: #DEE2E2;
+}
+
+#slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #slogan img {
@@ -101,4 +102,55 @@ main {
     object-fit: cover;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
+}
+
+/* MEDIA QUERIES MOBILE & IPAD */
+/* MEDIA QUERIES MOBILE */
+/* MEDIA QUERIES IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .about-top {
+        padding: 8% 19% 9%;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 10% 14% 13%;
+    }
+
+    .about .big-title {
+        text-align: center;
+    }
+
+    .about-text,
+    .signature, 
+    .small-signature {
+        text-align: center;
+        padding: 0% 5%;
+    }
+
+    .signature {
+        padding-top: 5%;
+    }
+
+    .visit {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 8% 10% 10%;
+    }
+
+    #stores,
+    #lofoten {
+        width: 80%;
+    }
+
+    #stores {
+        align-self: start;
+    }
+
+    #lofoten img {
+        margin-top: 3%;
+        max-height: 280px;
+    }
 }
