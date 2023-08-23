@@ -1,0 +1,117 @@
+main {
+    display: flex;
+    margin-top: 140px;
+    padding-right: 10%;
+}
+
+#side-img {
+    width: 56%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info,
+.shipping,
+.payment,
+.medium-title,
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding-left: 10%;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    width: 40%;
+}
+
+.shipping,
+.payment {
+    gap: 1rem;
+}
+
+.medium-title {
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+}
+
+.medium-title span {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.inputs label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding-bottom: 3%;
+}
+
+.inputs input {
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid rgba(35, 63, 63, 0.45);
+    padding-left: 6%;
+}
+
+.inputs input[type=date] {
+    font-family: 'Poppins', sans-serif;
+    color: #233F3F;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+
+.expDate,
+.CVC {
+    display: flex;
+    flex-direction: column;
+}
+
+.CVC label,
+.city label,
+.zip label {
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CVC input {
+    width: 60%;
+}
+
+.payment {
+    padding: 12% 0% 10%;
+}
+
+.payment .small-title {
+    font-weight: 500;
+}
+
+.CVC-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#question {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #7D9F9F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}

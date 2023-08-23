@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest digital games with GameHub - the universe of games">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/payment.css">
+
+    <title>RainyDays | Payment</title>
+  </head>
+<body>
+
+<!--HEADER-->
+
+<div class="banner">
+    <p class="banner-text">Free shipping on all orders above £120!</p>
+</div>
+<script src="/JS/header.js"></script>
+
+<header>
+    <figure class="logo-container">
+        <a href="/index.html"><img src="/IMG/logo.png" alt="" id="logo"></a>
+    </figure>
+
+    <nav class="nav-header">
+        <a class="nav-item" href="/HTML/shop.html">SHOP</a>
+        <a class="nav-item" href="/HTML/about.html">ABOUT</a>
+        <a class="nav-item" href="/HTML/contact.html">CONTACT</a>
+        <a class="nav-item" href="#">VISIT</a>
+        <a class="nav-item" href="#"><img src="/IMG/shoppingcart.png" id="shoppingcart"></a>
+    </nav>
+</header>
+
+<!--IMAGE-->
+
+<main>
+    <img src="/IMG/payment.png" alt="A man seen from behind hiking the mountains in a green outfit" id="side-img">
+
+
+<!--SHIPPING-->
+
+    <section class="info">
+        <div class="shipping">
+            <h1 class="medium-title">ALMOST READY FOR <span>YOUR NEXT ADVENTURE.</span></h1>
+
+            <div class="inputs">
+                <label for="fullName">Full name:</label>
+                <input type="text" name="fullName">
+            </div>
+
+            <div class="inputs">
+                <label for="eMail">E-mail:</label>
+                <input type="text" name="eMail">
+            </div>
+
+            <div class="inputs">
+                <label for="address1">Address 1:</label>
+                <input type="text" name="address1">
+            </div>
+
+            <div class="inputs">
+                <label for="address2">Address 2:</label>
+                <input type="text" name="address2">
+            </div>
+
+            <div class="inputs double">
+                <div class="city">
+                    <label for="city">City:</label>
+                    <input type="text" name="city">
+                </div>
+
+                <div class="zip">
+                    <label for="zip">ZIP:</label>
+                    <input type="number" name="zip">
+                </div>
+            </div>
+        </div>
+
+<!--PAYMENT-->
+
+        <div class="payment">
+            <h2 class="small-title">CARD DETAILS:</h2>
+            <div class="inputs">
+                <label for="cardName">Name on card:</label>
+                <input type="text" name="cardName">
+            </div>
+
+            <div class="inputs">
+                <label for="cardNumber">Name on card:</label>
+                <input type="number" name="cardNumber">
+            </div>
+
+            <div class="inputs double">
+                <div class="expDate">
+                    <label for="cardDate">Expiration date:</label>
+                    <input type="date" name="cardDate" class="short-input">
+                </div>
+
+                <div class="CVC">
+                    <label for="CVC">CVC</label>
+                        <div class="CVC-container">
+                            <input type="number" name="CVC" class="short-input">
+                            <span id="question">?</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/HTML/success.html" class="dark-green-btn">PAY NOW</a>
+    </section>
+</main>
+
+<!--FOOTER-->
+
+<footer></footer>
+</body>
+</html>
