@@ -92,6 +92,7 @@ button {
     background: #F8F8F8;
     width: 22%;
     padding: 8% 0% 30% 10%;
+    background-color: white;
 }
 
 .filter > div {
