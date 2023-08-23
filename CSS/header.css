@@ -57,6 +57,7 @@ header {
 .nav-header {
     padding-right: 10%;
     display: flex;
+    align-items: center;
     gap: 4rem;
 }
 
@@ -68,6 +69,8 @@ header {
 
 .hamburger-navigation {
     padding-right: 10%;
+    display: flex;
+    align-items: center;
 }
 
 #shoppingcart {
@@ -75,9 +78,35 @@ header {
     width: 21px;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    position: relative;
+}
+
+.search-bar input {
+    width: 350px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #b2bab9;
+}
+
+#search {
+    font-size: 1rem;
+    color: #233F3F;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 4.5rem;
+    background-color: transparent;
+}
+
 /* MEDIA QUERIES MOBILE AND IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
+
     .nav-header {
         display: none;
     }
@@ -105,6 +134,7 @@ header {
         flex-direction: column;
         justify-content: space-between;
         z-index: 100;
+        order: 2;
     }
 
     .nav-item {
@@ -140,6 +170,19 @@ header {
         top: 90px;
         gap: 2.5rem;
     }
+
+    .search-bar input {
+        display: none;
+    }
+
+    .search-bar {
+        padding-right: 1.7rem;
+    }
+
+    #search {
+        position: unset;
+        font-size: 1.4rem;
+    }
 }
 
 /* MEDIA QUERIES IPAD */
@@ -148,5 +191,13 @@ header {
     .nav-header.show {
         top: 90px;
         gap: 3rem;
+    }
+
+    .search-bar {
+        padding-right: 4.5rem;
+    }
+
+    #search {
+        right: 5rem;
     }
 }

@@ -22,3 +22,4 @@ hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('closed');
     navHeader.classList.toggle('show');
 })
+

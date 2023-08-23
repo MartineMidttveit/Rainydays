@@ -105,3 +105,9 @@ p {
 .dark-green-btn {
     background-color: #233F3F;
 }
+
+/* FORMS / INPUT */
+
+input::placeholder {
+    color: #80a3ab;
+}
