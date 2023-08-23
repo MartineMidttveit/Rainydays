@@ -15,23 +15,10 @@ var banner = document.querySelector(".banner-text");
 
 // HAMBURGER MENU
 
-function openMenu () {
-    document.querySelector('#hamburger-icon').addEventListener('click', () => {
-        const hamburgerMenu = document.querySelector('.nav-header')
-        hamburgerMenu.style.display = 'block'
-        document.querySelector('#hamburger-icon').style.display = 'none'
-        document.querySelector('#x-icon').style.display = 'block'
-    })
-}
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navHeader = document.querySelector('.nav-header');
 
-function closeMenu () {
-    document.querySelector('#x-icon').addEventListener('click', () => {
-        const hamburgerMenu = document.querySelector('.nav-header')
-        hamburgerMenu.style.display = 'none'
-        document.querySelector('#x-icon').style.display = 'none'
-        document.querySelector('#hamburger-icon').style.display = 'block'
-    })
-}
-
-openMenu();
-closeMenu();
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('closed');
+    navHeader.classList.toggle('show');
+})
