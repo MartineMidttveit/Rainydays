@@ -21,6 +21,7 @@ body {
 main {
     position: relative;
     top: 140px;
+    width: 100%;
 }
   
 
@@ -39,6 +40,8 @@ a {
 .big-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .medium-title {
@@ -120,13 +123,31 @@ input {
     opacity: 80%;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .big-title {
+        font-size: 1.3rem;
+      }
+  
+      .medium-title {
+          font-size: 1.1rem;
+      }
+  
+      .small-title {
+          font-size: 1rem;
+      }
+
+      p {
+        font-size: .8rem;
+      }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
     p, li {
         font-size: .9rem;
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1180px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
     .big-title {
       font-size: 1.8rem;
     }

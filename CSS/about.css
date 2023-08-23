@@ -105,18 +105,11 @@
 }
 
 /* MEDIA QUERIES MOBILE & IPAD */
-/* MEDIA QUERIES MOBILE */
-/* MEDIA QUERIES IPAD */
 
-@media only screen and (min-width: 768px) and (max-width: 1180px) {
-    .about-top {
-        padding: 8% 19% 9%;
-    }
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
 
     .about {
         flex-direction: column;
-        gap: 2rem;
-        padding: 10% 14% 13%;
     }
 
     .about .big-title {
@@ -127,6 +120,73 @@
     .signature, 
     .small-signature {
         text-align: center;
+    }
+
+    .visit {
+        flex-direction: column; 
+    }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .about-top {
+        padding: 15% 10%;
+    }
+
+    .about {
+        gap: 1rem;
+        padding: 15% 14% 15%;
+    }
+
+    #slogan .big-title {
+        width: 90%;
+    }
+
+    #slogan img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .signature {
+        font-size: 1.3rem;
+    }
+
+    .visit {
+        padding: 12% 10% 15%;
+    }
+
+    #stores,
+    #lofoten {
+        width: 90%;
+    }
+
+    #stores {
+        padding: 0;
+    }
+
+    #stores .dark-green-btn {
+        margin: 7% 0% 9%;
+    }
+
+    #lofoten img {
+        max-height: 150px;
+    }
+}
+
+/* MEDIA QUERIES IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .about-top {
+        padding: 8% 19% 9%;
+    }
+
+    .about {
+        gap: 2rem;
+        padding: 10% 14% 13%;
+    }
+
+    .about-text {
         padding: 0% 5%;
     }
 
@@ -135,7 +195,6 @@
     }
 
     .visit {
-        flex-direction: column;
         gap: 2rem;
         padding: 8% 10% 10%;
     }
