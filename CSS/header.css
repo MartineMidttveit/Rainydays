@@ -185,6 +185,14 @@ header {
         position: unset;
         font-size: 1.4rem;
     }
+
+    .banner p {
+        font-size: .6rem;
+    }
+
+    #logo {
+        height: 45%;
+    }
 }
 
 /* MEDIA QUERIES IPAD */

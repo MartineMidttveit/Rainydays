@@ -247,13 +247,110 @@ input {
 /* MEDIA QUERIES MOBILE AND IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
+  .card {
+    align-items: end;
+  }
+
+  .card .card-info {
+    opacity: 1;
+    z-index: 60;
+    padding-bottom: 8%;
+  }
+
+  .sectionFour {
+    flex-direction: column;
+  }
+
+  .container ul, 
+  .container li {
+    display: none;
+  }
+
+  .container p {
+    width: 100%;
+  }
+
+  .container,
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sectionSix {
+    background-image: none;
+    background-color: #FEFDFD;
+    height: fit-content;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
 }
 
 
 /* MEDIA QUERIES MOBILE */
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sectionOne {
+    background-position: 30% 80%;
+    height: 350px;
+  }
 
+  .image-text {
+    width: 70%;
+  }
+
+  .sectionTwo {
+    padding: 5% 10% 14%;
+  }
+
+  .section-title {
+    padding: 3% 0% 5%;
+  }
+
+  .cards {
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 180px;
+  }
+  
+  .sectionFour {
+    padding: 13% 10% 15%;
+    gap: 1.4rem;
+  }
+
+  .sectionFour img {
+    height: 200px;
+    width: 60%;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sectionFive {
+    padding: 10% 10% 15%;
+  }
+
+  .sectionFive .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 180px 180px;
+  }
+
+  .sectionSix {
+    padding: 13% 10% 15%;
+  }
+
+  .subscription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* MEDIA QUERIES IPAD */
 
@@ -280,19 +377,8 @@ input {
     grid-template-rows: 220px;
   }
 
-  .card {
-    align-items: end;
-  }
-
-  .card .card-info {
-    opacity: 1;
-    z-index: 60;
-    padding-bottom: 8%;
-  }
-
   .sectionFour {
     padding: 8% 10%;
-    flex-direction: column;
     gap: 2.5rem;
   }
 
@@ -306,23 +392,6 @@ input {
     order: 2;
   }
 
-  .container,
-  .newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .container p {
-    width: 100%;
-  }
-
-  .container ul, 
-  .container li {
-    display: none;
-  }
-
   .container .dark-green-btn {
     margin-top: 2%;
   }
@@ -332,12 +401,6 @@ input {
   }
 
   .sectionSix {
-    height: 400px;
-    background-image: none;
-    background-color: #FEFDFD;
-  }
-
-  .newsletter {
-    width: 100%;
+    padding: 8% 10%;
   }
 }
