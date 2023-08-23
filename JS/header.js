@@ -11,3 +11,27 @@ var banner = document.querySelector(".banner-text");
     }
 
     setInterval(rotateBannerText, 2500);
+
+
+// HAMBURGER MENU
+
+function openMenu () {
+    document.querySelector('#hamburger-icon').addEventListener('click', () => {
+        const hamburgerMenu = document.querySelector('.nav-header')
+        hamburgerMenu.style.display = 'block'
+        document.querySelector('#hamburger-icon').style.display = 'none'
+        document.querySelector('#x-icon').style.display = 'block'
+    })
+}
+
+function closeMenu () {
+    document.querySelector('#x-icon').addEventListener('click', () => {
+        const hamburgerMenu = document.querySelector('.nav-header')
+        hamburgerMenu.style.display = 'none'
+        document.querySelector('#x-icon').style.display = 'none'
+        document.querySelector('#hamburger-icon').style.display = 'block'
+    })
+}
+
+openMenu();
+closeMenu();

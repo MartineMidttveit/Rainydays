@@ -70,3 +70,33 @@ header {
     height: 21px;
     width: 21px;
 }
+
+/* HAMBURGER MENU */
+
+#hamburger-icon,
+#x-icon {
+    font-size: 1.2rem;
+    color: #233F3F;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
+    .nav-header {
+        display: none;
+    }
+
+    #hamburger-icon,
+    #x-icon {
+        display: block;
+    }
+
+    .hamburger-menu {
+        background-color: white;
+    }
+}

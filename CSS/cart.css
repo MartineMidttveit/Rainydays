@@ -1,0 +1,52 @@
+.shoppingcart {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 140px;
+    background-color: #DEE2E2;
+    padding: 5% 10% 7%;
+}
+
+.medium-title {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.5%;
+}
+
+#line {
+    border: 0.2px solid #233F3F;
+    opacity: 40%;
+    margin-top: 1%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-top: 2.5%;
+    padding-left: 7%;
+    gap: 2rem;
+}
+
+.product-img {
+    background-color: white;
+    width: 80%;
+    height: 230px;
+    border-radius: 25px;
+}
+
+.priceShipping {
+    grid-column: 4/5;
+    font-size: 1.1rem;
+}
+
+.totalPrice {
+    grid-column: 5/6;
+    font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: 500;
+}
