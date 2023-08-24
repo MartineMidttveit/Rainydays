@@ -112,6 +112,10 @@
     .small-title {
         font-size: .75rem;
     }
+
+    .sectionTree {
+        padding: 10% 10% 13%;
+    }
 }
 
 /* MEDIA QUERIES IPAD */

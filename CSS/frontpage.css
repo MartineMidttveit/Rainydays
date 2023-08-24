@@ -289,7 +289,6 @@ input {
   }
 }
 
-
 /* MEDIA QUERIES MOBILE */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -307,7 +306,7 @@ input {
   }
 
   .section-title {
-    padding: 3% 0% 5%;
+    padding: 3% 0% 6%;
   }
 
   .cards {
