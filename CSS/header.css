@@ -186,12 +186,12 @@ header {
     }
 
     .search-bar {
-        padding-right: 1.7rem;
+        padding-right: 1.4rem;
     }
 
     #search {
         position: unset;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .banner p {
