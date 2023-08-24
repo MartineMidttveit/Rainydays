@@ -161,6 +161,10 @@ input {
     .dark-green-btn {
         width: 110px;
     }
+
+    input::placeholder {
+        font-size: .7rem;
+    }
 }
 
 /* MEDIA QUERIES IPAD */
