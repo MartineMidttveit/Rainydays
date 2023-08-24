@@ -148,9 +148,10 @@ ul li:hover {
     width: 78%;
     height: 100%;
     padding: 8% 10% 5% 4%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 420px);
     position: unset;
-    gap: 1.8rem;
+    gap: 1.5rem;
 }
 
 .product-list img {
@@ -162,7 +163,7 @@ ul li:hover {
 }
 
 .product-info .small-title {
-    font-size: .9rem;
+    font-size: .85rem;
 }
 
 .product {
