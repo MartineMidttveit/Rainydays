@@ -168,8 +168,16 @@ header {
 /* MEDIA QUERIES MOBILE */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    header {
+        height: 75px;
+    }
+
+    .nav-item {
+        font-size: .85rem;
+    }
+
     .nav-header.show {
-        top: 90px;
+        top: 75px;
         gap: 2.5rem;
     }
 
