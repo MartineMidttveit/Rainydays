@@ -123,29 +123,47 @@ input {
     opacity: 80%;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    .big-title {
-        font-size: 1.3rem;
-      }
-  
-      .medium-title {
-          font-size: 1.1rem;
-      }
-  
-      .small-title {
-          font-size: 1rem;
-      }
+/* MEDIA QUERIES MOBILE & IPAD */
 
-      p {
-        font-size: .8rem;
-      }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1180px) {
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
     p, li {
         font-size: .9rem;
     }
 }
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .big-title {
+        font-size: 1.3rem;
+    }
+  
+    .medium-title {
+        font-size: 1.1rem;
+    }
+  
+    .small-title {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .stroke-btn,
+    .green-btn,
+    .dark-green-btn {
+        height: 40px;
+        font-size: .75rem;
+    }
+
+    .green-btn,
+    .dark-green-btn {
+        width: 110px;
+    }
+}
+
+/* MEDIA QUERIES IPAD */
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
     .big-title {
@@ -159,23 +177,19 @@ input {
     .small-title {
         font-size: 1rem;
     }
+
+    .stroke-btn,
+    .green-btn,
+    .dark-green-btn {
+        height: 42px;
+        font-size: .85rem;
+    }
+
+    .green-btn {
+        width: 110px;
+    }
+
+    .dark-green-btn {
+        width: 125px;
+    }
   }
-
-/*
-.big-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2rem;
-}
-
-.medium-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-}
-
-.small-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-*/

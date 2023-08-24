@@ -1,6 +1,5 @@
-main {
+.wrapper {
     display: flex;
-    margin-top: 140px;
     padding-right: 10%;
 }
 
@@ -115,3 +114,77 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* MEDIA QUERIES MOBILE & IPAD */
+
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #side-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .info {
+        width: 90%;
+    }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .wrapper {
+        padding-top: 8%;
+    }
+    
+    .medium-title {
+        font-size: 1.1rem;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .medium-title span {
+        font-size: 1.2rem;
+    }
+
+    .double {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .shipping,
+    .payment {
+        width: 100%;
+    }
+
+    #side-img {
+        height: 250px;
+    }
+
+    .info {
+        padding-bottom: 14%;
+    }
+}
+
+/* MEDIA QUERIES IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    #side-img {
+        height: 350px;
+    }
+
+    .info {
+        padding: 8% 10% 11%;
+    }
+
+    .inputs label {
+        padding-bottom: 1%;
+    }
+
+    .small-title {
+        padding-bottom: 3%;
+    }
+  }
