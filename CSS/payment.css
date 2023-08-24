@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     padding-right: 10%;
+    background-color: #DEE2E2;
 }
 
 #side-img {
@@ -177,7 +178,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .info {
-        padding: 8% 10% 11%;
+        padding: 8% 10% 9%;
     }
 
     .inputs label {
@@ -185,6 +186,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .small-title {
-        padding-bottom: 3%;
+        padding-bottom: 2%;
+    }
+
+    .city input,
+    .zip input {
+        width: 100%;
+    }
+
+    .CVC-container input {
+        width: 85%;
+    }
+
+    .payment {
+        padding: 11% 0% 7%;
     }
   }
