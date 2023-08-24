@@ -135,7 +135,8 @@ input {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     main {
-        top: 125px;
+        position: relative;
+        top: 126px;
     }
 
     .big-title {
