@@ -116,6 +116,14 @@
     .sectionTree {
         padding: 10% 10% 13%;
     }
+
+    .product {
+        padding: 18% 5%;
+    }
+
+    .product img {
+        width: 50%;
+    }
 }
 
 /* MEDIA QUERIES IPAD */
