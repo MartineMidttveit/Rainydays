@@ -1,3 +1,7 @@
+body {
+    transition: opacity 0.5s ease-in-out;
+}
+
 /* TOP */
 
 .hero-section {
