@@ -120,7 +120,8 @@ ul li:hover {
 
 .size,
 .color,
-.activity {
+.activity,
+.gender {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -129,10 +130,15 @@ ul li:hover {
     font-weight: 300;
 }
 
+.gender {
+    align-items: end;
+}
+
 #size1,
 #color1,
 #activity1,
-.first-label {
+.first-label,
+#men {
     margin-top: 12%;
 }
 
@@ -140,6 +146,14 @@ ul li:hover {
     height: 22px;
     width: 22px;
     border: 1px solid rgba(35, 63, 63, 0.40);
+}
+
+.filter-2 .small-title,
+.filter-3 .small-title,
+.filter-4 .small-title,
+.filter-5 .small-title,
+.filter-6 .small-title {
+    font-size: 1rem;
 }
 
 /* SHOP-GRID */
