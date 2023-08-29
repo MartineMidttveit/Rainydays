@@ -10,11 +10,11 @@ menCheckbox.addEventListener("click", function() {
     }
 });
 
-var menCheckbox = document.getElementById("women");
+var womenCheckbox = document.getElementById("women");
 
-menCheckbox.addEventListener("click", function() {
+womenCheckbox.addEventListener("click", function() {
 
-    if (menCheckbox.checked) {
+    if (womenCheckbox.checked) {
         document.body.style.opacity = "0";
         setTimeout(function() {
             window.location.href = "/HTML/womens.html"; 
