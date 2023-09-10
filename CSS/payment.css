@@ -4,10 +4,15 @@
     background-color: #DEE2E2;
 }
 
-#side-img {
-    width: 56%;
-    max-height: 1000px;
-    object-fit: cover;
+.rightSide {
+    background-image: url(/IMG/payment.png);
+    background-position: 80%;
+    height: 1000px;
+}
+
+#two {
+    background-color: #233F3F;
+    color: white;
 }
 
 .info,
@@ -24,6 +29,7 @@
     padding-top: 6%;
     padding-bottom: 4%;
     width: 40%;
+    justify-content: center;
 }
 
 .shipping,
@@ -92,7 +98,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .payment {
-    padding: 12% 0% 10%;
+    padding: 6% 0% 10%;
 }
 
 .payment .small-title {
