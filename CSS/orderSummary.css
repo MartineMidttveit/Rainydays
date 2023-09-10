@@ -6,8 +6,10 @@
 /* STAGES */ 
 
 .rightSide {
+    background-image: none;
     background-color: #FEFDFD;
     padding: 3% 10%;
+    height: fit-content;
 }
 
 .rightSide,
