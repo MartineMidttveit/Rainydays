@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest digital games with GameHub - the universe of games">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/orderSummary.css">
+    <link rel="stylesheet" href="/CSS/payment.css">
+
+    <title>RainyDays | Payment</title>
+  </head>
+<body>
+
+<!--HEADER-->
+
+<div class="banner">
+    <p class="banner-text">Free shipping on all orders above £120!</p>
+</div>
+
+<header>
+    <figure class="logo-container">
+        <a href="/index.html"><img src="/IMG/logo.png" alt="" id="logo"></a>
+    </figure>
+
+    <div class="hamburger-navigation">
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" name="searchbar">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav class="nav-header">
+            <a class="nav-item" href="/HTML/shop.html">SHOP</a>
+            <a class="nav-item" href="/HTML/about.html">ABOUT</a>
+            <a class="nav-item" href="#">CONTACT</a>
+            <a class="nav-item" href="/HTML/cart.html"><img src="/IMG/shoppingcart.png" id="shoppingcart"></a>
+        </nav>
+    </div>
+</header>
+
+<script src="/JS/header.js"></script>
+
+<main>
+
+    <section class="summary">
+        <div class="rightSide">
+            <div class="stages">
+                <span class="line">
+                    <div class="circle-container" id="first">
+                        <span class="circle" id="one">1</span>
+                        <p>Shipping</p>
+                    </div>
+
+                    <div class="circle-container" id="second">
+                        <span class="circle" id="two">2</span>
+                        <p>Payment</p>
+                    </div>
+
+                    <div class="circle-container" id="third">
+                        <span class="circle" id="tree">3</span>
+                        <p>Summary</p>
+                    </div>
+                </span>
+            </div>
+    
+            <h1 class="medium-title">ORDER SUMMARY:</span></h1>
+
+            <div class="addedJackets">
+                <figure class="product-image">
+                    <img src="/IMG/jacket.png" alt="">
+                </figure>
+
+                <article class="product-description">
+                    <h2 class="small-title">Jacket Name</h2>
+                    <p>Price: <span>£ 120</span></p>
+                    <p>Size: <span>Large</span></p>
+                    <p>Quantity: <span>1</span></p>
+                </article>
+            </div>
+
+            <div class="prices">
+                <h2 class="medium-title">TOTAL PRICE:</h2>
+                    <div class="price-info">
+                        <p>Subtotal:</p>
+                        <p>£ 130</p>
+                    </div>
+
+                    <div class="price-info">
+                        <p>Shipping:</p>
+                        <p>FREE</p>
+                    </div>
+
+                    <span class="total-line"></span>
+
+                    <div class="price-info">
+                        <p class="bold">TOTAL:</p>
+                        <p class="bold">£ 130</p>
+                    </div>
+            </div>
+
+            <div class="coupons">
+                <form class="giftcard">
+                    <label for="giftcard">Giftcard:</label>
+                    <input type="text">
+                </form>
+
+                <form class="coupon">
+                    <label for="coupon">Coupon code:</label>
+                    <input type="text">
+                </form>
+            </div>
+        </div>
+
+        <div class="leftSide">
+            <div class="shipping">
+                <div class="inputs">
+                    <label for="fullName">Full name:</label>
+                    <input type="text" name="fullName">
+                </div>
+    
+                <div class="inputs">
+                    <label for="eMail">E-mail:</label>
+                    <input type="text" name="eMail">
+                </div>
+    
+                <div class="inputs">
+                    <label for="address1">Address 1:</label>
+                    <input type="text" name="address1">
+                </div>
+    
+                <div class="inputs">
+                    <label for="address2">Address 2:</label>
+                    <input type="text" name="address2">
+                </div>
+    
+                <div class="inputs double">
+                    <div class="city">
+                        <label for="city">City:</label>
+                        <input type="text" name="city">
+                    </div>
+    
+                <div class="zip">
+                    <label for="zip">ZIP:</label>
+                    <input type="number" name="zip">
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- FOOTER -->
+
+<footer>
+    <div id="footer-wrapper">
+        <div class="col" id="col-1">
+            <p class="small-titles">© RainyDays 2023</p>
+            <p class="small-titles">Terms & Conditions</p>
+            <p class="small-titles">Privacy policy</p>
+        </div>
+
+        <div class="col" id="col-2">
+            <a href="/HTML/visit.html" class="footer-heading">CONTACT</a>
+            <a href="/HTML/contact.html" class="small-titles">Contact us</a>
+            <p class="small-titles">Customer service</p>
+            <p class="small-titles">FAQ</p>
+        </div>
+
+        <div class="col" id="col-3">
+            <a href="/HTML/about.html" class="footer-heading">ABOUT US</a>
+            <a href="/HTML/stores.html" class="small-titles">Our stores</a>
+            <a href="/HTML/about.html" class="small-titles">About us</a>
+            <p class="small-titles">Visit</p>
+        </div>
+
+        <div class="col" id="col-4">
+            <p class="footer-heading">SOCIAL MEDIA:</p>
+            <a href="#" aria-label="Clickable button of the Instagram-logo redirecting to the museum's Instagram-account"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Clickable button of the Facebook-logo redirecting to the museum's Facebook-account"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+    </div>  
+</footer>
+
+</main>
+</body> 
+</html>
+ 

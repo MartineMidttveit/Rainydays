@@ -1,0 +1,168 @@
+
+.summary {
+    display: flex;
+}
+
+/* STAGES */ 
+
+.rightSide {
+    background-color: #FEFDFD;
+    padding: 3% 10%;
+}
+
+.rightSide,
+.leftSide {
+    width: 50%;
+}
+
+.stages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 150px;
+}
+
+.line {
+    height: 3px;
+    background-color: #DEE2E2;
+    width: 100%;
+    position: relative;
+}
+
+.circle-container {
+    position: absolute;
+    top: -15px;
+}
+
+#first {
+    left: 0;
+}
+
+#one {
+    background-color: #233F3F;
+    color: white;
+}
+
+#second {
+    left: 50%;
+}
+
+#third {
+    right: -12%;
+}
+
+#tree {
+    display: flex;
+}
+
+.circle {
+    background-color: #DEE2E2;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* ORDER SUMMARY */
+
+.rightSide .medium-title {
+    padding: 12% 0% 5%;
+}
+
+.addedJackets {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+    padding-top: 2%;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.product-description {
+    flex-direction: column;
+    width: 60%;
+}
+
+.product-description p span {
+    padding-left: 5%;
+}
+
+/* TOTAL PRICE */
+
+.price-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.price-info p {
+    margin: 2% 0%;
+}
+
+.prices .medium-title {
+    font-size: 1.25rem;
+}
+
+.prices .total-line {
+    height: 1px;
+    width: 80%;
+    margin: 4% 0%;
+    background-color: #233F3F;
+    display: flex;
+}
+
+.bold {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* GIFTCARD & COUPONS */
+
+.coupons {
+    padding: 12% 0% 10%;
+}
+
+.giftcard,
+.coupon {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-bottom: 2%;
+}
+
+.giftcard input,
+.coupon input {
+    width: 80%;
+    height: 44px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #DEE2E2;
+    padding-left: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+}
+
+
+/* TOTAL PRICE */
+
+.leftSide {
+    background-color: #DEE2E2;
+    padding: 7% 10%;
+}
+
+
