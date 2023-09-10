@@ -160,9 +160,41 @@ label {
 
 /* TOTAL PRICE */
 
+.paymentMethod {
+    margin: 13% 0%;
+}
+
 .leftSide {
     background-color: #DEE2E2;
     padding: 7% 10%;
 }
+
+.payment-options {
+    background-color: #FEFDFD;
+    margin: 2% 0%;
+    padding: 5% 10%;
+    border-radius: 6px;
+}
+
+.paymentOpt {
+    display: grid;
+    grid-template-columns: 65% 25% 10%;
+    align-items: center;
+}
+
+.paymentOpt input {
+    height: 20px;
+}
+
+.payment-options i {
+    font-size: 1.6rem;
+    color: #233F3F;
+}
+
+.paymentMethod .dark-green-btn {
+    margin-top: 7%;
+    float: right;
+}
+
 
 

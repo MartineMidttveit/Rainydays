@@ -129,6 +129,7 @@
 
         <div class="leftSide">
             <div class="shipping">
+                <h2 class="medium-title">SHIPPING DETAILS:</h2>
                 <div class="inputs">
                     <label for="fullName">Full name:</label>
                     <input type="text" name="fullName">
@@ -160,7 +161,35 @@
                     <input type="number" name="zip">
                 </div>
             </div>
-        </div>  
+        </div> 
+        
+        <div class="paymentMethod">
+            <h2 class="medium-title">PAYMENT METHOD:</h2>
+
+            <div class="payment-options">
+                <form class="paymentOpt" id="opt-1">
+                    <label for="opt-1">VISA / MasterCard</label>
+                    <div class="cards">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </div>
+                    <input type="radio">
+                </form>
+
+                <form class="paymentOpt" id="opt-2">
+                    <label for="opt-2">PayPal</label>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <input type="radio">
+                </form>
+
+                <form class="paymentOpt" id="opt-3">
+                    <label for="opt-3">Apple Pay</label>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                    <input type="radio">
+                </form>
+            </div>
+            <a href="/HTML/payment.html" class="dark-green-btn">PAYMENT</a>
+        </div>
     </section>
 
     <!-- FOOTER -->
