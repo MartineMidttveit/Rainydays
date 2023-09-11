@@ -42,6 +42,18 @@
     object-fit: cover;
 }
 
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+#contact {
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
 /* INSTAGRAM POSTS */
 
 .instagram {
@@ -63,8 +75,8 @@
 }
 
 .posts img {
-    background-color: white;
     height: 250px;
     width: 100%;
     border-radius: 25px;
+    object-fit: cover;
 }
