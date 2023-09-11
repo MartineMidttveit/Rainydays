@@ -111,6 +111,11 @@ img {
     }
 
     .store-container img,
+    #white-container img {
+        border-radius: unset;
+        width: 100%;
+    }
+
     #white-container .text-container,
     .text-container {
         width: 90%;
@@ -123,6 +128,11 @@ img {
     #white-container .text-container,
     .map {
         order: 2; 
+    }
+
+    #white-container,
+    #white-container img {
+        padding-top: 0%;
     }
 
     .map,
@@ -171,19 +181,15 @@ img {
     }
 
     #white-container .text-container {
-        padding-bottom: 12%;
-    }
-
-    #white-container img {
-        padding: 5% 0%;
+        padding: 12% 10%;
     }
 
     .contact {
-        padding: 10% 0%;
+        padding: 12% 0%;
     }
 
     .map {
-        padding: 10% 0%;
+        padding: 12% 0%;
     }
 
     #map {
@@ -201,5 +207,18 @@ img {
 
     .text-container .big-title {
         padding: 5% 0% 3%;
+    }
+
+    .text-container {
+        padding: 4% 10%;
+    }
+
+    #white-container .text-container {
+        padding: 6% 10% 8%;
+    }
+
+    .contact,
+    .map {
+        padding: 10%;
     }
   }
