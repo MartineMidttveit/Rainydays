@@ -130,9 +130,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 0;
     }
 
-    #side-img {
+    .rightSide {
         width: 100%;
-        order: 2;
     }
 
     .info {
@@ -143,14 +142,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* MEDIA QUERIES MOBILE */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .wrapper {
-        padding-top: 8%;
-    }
     
     .medium-title {
         font-size: 1.1rem;
         padding-bottom: 5%;
         width: 100%;
+    }
+
+    .rightSide {
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 0;
+        height: 536px;
+    }
+
+    .stages {
+        width: 97%;
+        top: 1%;
+    }
+
+    #second {
+        left: 46%;
     }
     
     .medium-title span {
@@ -159,7 +171,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     .double {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
     }
 
     .shipping,
@@ -167,24 +178,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         width: 100%;
     }
 
-    #side-img {
-        height: 250px;
-    }
-
     .info {
-        padding-bottom: 14%;
+        padding: 10% 0% 15% 10%
     }
 }
 
 /* MEDIA QUERIES IPAD */
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-    #side-img {
-        height: 350px;
+
+    .rightSide {
+        max-height: 820px;
+    }
+
+    .stages {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .line {
+        background-color: #233F3F;
     }
 
     .info {
-        padding: 8% 10% 9%;
+        padding: 8% 10% 12%;
     }
 
     .inputs label {
@@ -195,16 +212,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding-bottom: 2%;
     }
 
-    .city input,
-    .zip input {
-        width: 100%;
-    }
-
     .CVC-container input {
         width: 85%;
     }
 
     .payment {
-        padding: 11% 0% 7%;
+        padding: 5% 0% 6%;
     }
   }
