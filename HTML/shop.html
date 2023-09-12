@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="/CSS/shop.css">
 
     <title>RainyDays | Shop</title>
+
+    <script defer src="/JS/filter.js"></script>
   </head>
 <body>
 
@@ -89,7 +91,17 @@
 <!--FILTER-->
 
 <section class="shop">
-    <aside class="filter">
+    <aside class="filter filter-mobile-hidden">
+        <div class="actions">
+            <div class="close-filter desktop-hidden">
+                <i class="fa-solid fa-x"></i>
+            </div>
+
+            <button class="filter-button">
+                Filtrar
+            </button>
+        </div>
+
         <div class="filter-1">
             <h2 class="medium-title">JACKETS</h2>
             <ul>
@@ -225,6 +237,12 @@
                 </div>
         </div>
     </aside>
+
+    <div class="filter-mobile-button desktop-hidden">
+        <div class="wrapper">
+            <i class="fa-solid fa-filter"></i>
+        </div>
+    </div>
 
     <main class="product-list"></main>
 
