@@ -123,8 +123,6 @@
 	}
 }
 
-
-
 /* SALE */
 
 .onSale {
@@ -146,3 +144,86 @@
 	font-family: 'Poppins', sans-serif;
 	background-color: #233F3F;
 }
+
+/* ERROR */
+
+.error-box {
+    height: 800px;
+	width: 100%;
+}
+
+.wrapper-error {
+	position: absolute;
+    top: 60%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	height: 200px;
+	text-align: center;
+}
+
+.darkcloud {
+	position: absolute;
+	left: 25%;
+	padding: 5px;
+	height: 150px;
+	z-index: 10;
+}
+
+.lightening {
+	width: 180px;
+	height: 140px;
+}
+
+.light {
+	position: relative;
+	float: left;
+	margin: 10px;
+	left: 70%;
+	animation: thunder 0.8s infinite ease-out;
+}
+
+.light:nth-child(1) {
+	height: 15px;
+	top: 100px;
+	animation-delay: -1.0s;
+}
+
+.light:nth-child(2) {
+	height: 20px;
+	top: 110px;
+	animation-delay: -1.4s;
+}
+
+.light:nth-child(3) {
+	height: 15px;
+	top: 100px;
+	animation-delay: -1.6s;
+}
+
+@keyframes thunder {
+	0% { opacity: 1; }
+  
+  	20% { opacity: 0; }
+  
+  	30% { opacity: 0; }
+  
+  	30% { opacity: 1; }
+  
+  	80% { opacity: 0; }
+  
+  	100% { opacity: 0; }
+}
+
+.bold {
+	font-weight: 500;
+}
+
+#refresh {
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 2% 0% 8%;
+}
+
