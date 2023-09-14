@@ -20,19 +20,15 @@ async function getJackets() {
     }
     document.querySelector(".product-list").innerHTML = display;
 
-    const favoriteIcons = document.querySelectorAll('.fa-heart');
-
-    favoriteIcons.forEach(icon => {
-        icon.addEventListener('click', function() {
-            if (icon.classList.contains('fa-regular')) {
-                icon.classList.remove('fa-regular');
-                icon.classList.add('fa-solid', 'favorite-animate');
-            } else {
-                icon.classList.remove('fa-solid', 'favorite-animate');
-                icon.classList.add('fa-regular');
-            }
-        });
-    });
 }
 
 getJackets();
+
+
+import fetchJackets from "./fetchJackets.js";
+
+
+const agurk = "https://api.noroff.dev/api/v1/rainy-days";
+const eple = "/2145163262abs3";
+
+fetchJackets(agurk);
