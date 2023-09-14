@@ -44,12 +44,3 @@ export default function popularProducts(jacket, productList) {
         container.prepend(onSale)
     }
 }
-
-
-
-
-
-
-// <div class="onSale">
-// <span class="circle">SALE</span>
-//</div>

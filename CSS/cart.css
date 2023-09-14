@@ -29,6 +29,10 @@
     gap: 2rem;
 }
 
+.product-grid .small-title {
+    font-weight: 500;
+}
+
 .product-img {
     background-color: white;
     width: 60%;

@@ -58,6 +58,11 @@
     padding-left: 3%;
 }
 
+.contact-details .medium-title,
+.bottom .medium-title {
+    font-size: 1.5rem;
+}
+
 .faq {
     width: 100%;
     display: grid;
@@ -68,6 +73,7 @@
 
 .faq .small-title {
     padding-bottom: 4%;
+    font-weight: 500;
 }
 
 details {
@@ -82,6 +88,10 @@ details p {
 
 summary {
     font-weight: 300;
+}
+
+summary:hover {
+    cursor: pointer;
 }
 
 .faq-box {

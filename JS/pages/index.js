@@ -26,7 +26,6 @@ allNumbers.forEach(number => {
 })
 
 favorite();
-
 sectionFour(allJackets[10], newProduct);
 
 
