@@ -64,3 +64,5 @@ export default function sectionFour (jacket, newProduct) {
 
     newProduct.append(container);
 }
+
+

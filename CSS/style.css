@@ -123,6 +123,33 @@ input {
     opacity: 80%;
 }
 
+/* SALE */
+
+.onSale {
+	height: fit-content;
+	display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.circle {
+	height: 55px;
+	width: 55px;
+	padding: 3%;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .8px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #BED8D5;
+    color: #233F3F;
+}
+
 /* MEDIA QUERIES MOBILE & IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
@@ -202,3 +229,4 @@ input {
         width: 125px;
     }
   }
+

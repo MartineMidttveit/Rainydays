@@ -20,7 +20,7 @@ export default function popularProducts(jacket, productList) {
     h3.textContent = jacketName;
     const price = document.createElement("p");
     price.classList.add("price");
-    price.textContent = jacket.price;
+    price.textContent = "£ " + jacket.discountedPrice;
     const gender = document.createElement("p");
     gender.classList.add("gender");
     gender.textContent = jacket.gender;
@@ -33,5 +33,23 @@ export default function popularProducts(jacket, productList) {
     productInfo.append(h3, price, gender, btn);
 
     productList.appendChild(container);
+
+    if(jacket.onSale) {
+        const onSale = document.createElement("div")
+        onSale.classList.add("onSale")
+        const span = document.createElement("span")
+        span.classList.add("circle")
+        span.textContent ="SALE"
+        onSale.appendChild(span)
+        container.prepend(onSale)
+    }
 }
 
+
+
+
+
+
+// <div class="onSale">
+// <span class="circle">SALE</span>
+//</div>
