@@ -73,10 +73,10 @@
 }
 
 #refresh {
-	font-family: 'Poppins', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
 	padding: 2% 0% 8%;
+    font-family: 'Poppins', sans-serif;
 }

@@ -54,8 +54,13 @@ export default function createError(error, errorBox) {
     wrapper.append(title, errorMessage, refresh, darkCloud, lightening);
     darkCloud.append(cloud);
     lightening.append(lighteningOne, lighteningTwo, lighteningThree);
-    // refresh(refreshBtn);
+    refresh.append(refreshBtn);
     
+
+    refresh.addEventListener("click", (e) => {
+        location.reload();
+    })
+
 }
 
 
