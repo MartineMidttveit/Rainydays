@@ -11,6 +11,7 @@ const url = "https://api.noroff.dev/api/v1/rainy-dayss";
 const allJackets = await fetchJackets(url);
 
 if (allJackets.errors) {
+  
     createError(allJackets, newProduct)
 }
 else  {

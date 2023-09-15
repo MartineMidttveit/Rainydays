@@ -41,17 +41,6 @@ newProduct.append(span, slider)
       i = 0;
     } else i++;
   }, 5000);
-  
-    // slider([imageOne, imageTwo, imageThree])
-
-// setInterval(()=>{
-//     if(slidePosition==totalSlider-1){
-//       slidePosition=0;
-//     }else{
-//       slidePosition++;
-//     }
-//     updatePosition();
-//   },5000);
 
     const container = document.createElement("div");
     container.classList.add("container");
@@ -93,26 +82,3 @@ newProduct.append(span, slider)
 
     newProduct.append(container);
 }
-
-
-// const slides = [imageOne, imageTwo, imageThree];
-
-// let currentIndex = 0;
-
-// function showSlide(index) {
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.opacity = 0;
-//     }
-//     slides[index].style.opacity = 1;
-// }
-
-// function nextSlide() {
-//     currentIndex = (currentIndex + 1) % slides.length;
-//     showSlide(currentIndex);
-// }
-
-// // Initial display
-// showSlide(currentIndex);
-
-// // Automatically switch to the next slide every 5 seconds (adjust as needed)
-// setInterval(nextSlide, 5000);

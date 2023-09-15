@@ -10,7 +10,7 @@ export default function createError(error, errorBox) {
     title.textContent = "WOOPS... Error!";
 
     const errorMessage = document.createElement("p");
-    errorMessage.textContent = "Could not load products due to " + error.errorMessage; // SJEKKE AT DENNE ER OK
+    errorMessage.textContent = "Could not load products due to " + error.statusCode + " " + error.status; // SJEKKE AT DENNE ER OK
 
     const refresh = document.createElement("a");
     refresh.setAttribute("id", "refresh"); 
