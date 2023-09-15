@@ -49,10 +49,12 @@
 
 #second {
     left: 50%;
+    transform: translateX(-50%);
 }
 
 #third {
-    right: -12%;
+    margin-right: 0;
+    right: 0;
 }
 
 #tree {
@@ -84,6 +86,10 @@
     gap: 2rem;
     padding-top: 2%;
     align-items: center;
+}
+
+.product-image {
+    margin: 12px;
 }
 
 .product-image img {
@@ -193,9 +199,68 @@ label {
     color: #233F3F;
 }
 
+.double-order-summary {
+    display: flex;
+    flex-direction: row;
+}
+
+.double-order-summary .city,
+.double-order-summary .zip {
+    width: 50%;
+}
+
+.double-order-summary .city input,
+.double-order-summary .zip input {
+    width: 100%;
+}
+
+.circle-container p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle-container#third .circle {
+    margin-left: auto;
+}
+
 .paymentMethod .dark-green-btn {
     margin-top: 7%;
     float: right;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1080px) {
+    .order-summary {
+        flex-direction: column;
+    }
+
+    .rightSide, .leftSide {
+        width: 100%;
+    }
+
+    .order-summary .coupon input,
+    .order-summary .giftcard input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .addedJackets {
+        grid-template-columns: 60% 40%;
+    }
+    
+    .addedJackets img {
+        max-width: 200px;
+    };
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .addedJackets {
+        grid-template-columns: 50% 50%;
+    }
+
+    .prices .total-line {
+        width: 100%;
+    }
 }
 
 

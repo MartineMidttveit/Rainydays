@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop. Elevate your rainy-day fashion with our exquisite collection of rain jackets.">
+    <meta name="description" content="Explore the latest digital games with GameHub - the universe of games">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 
     <title>RainyDays | Shop</title>
 
-    <script defer src="/JS/filter.js"></script>
+    <script type="module" defer src="/JS/filter.js"></script>
   </head>
 <body>
 
@@ -97,8 +97,8 @@
                 <i class="fa-solid fa-x"></i>
             </div>
 
-            <button class="filter-button">
-                Filter
+            <button class="filter-button desktop-hidden">
+                Apply Filters
             </button>
         </div>
 
@@ -163,6 +163,11 @@
                 <input type="checkbox" id="size5" name="size5" value="X-Large" class="input">
                 <label for="size5">X-Large</label>
             </div>
+
+            <div class="size">
+                <input type="checkbox" id="size6" name="size6" value="XX-Large" class="input">
+                <label for="size6">XX-Large</label>
+            </div>
         </div>
 
         <div class="filter-4">
@@ -204,8 +209,8 @@
             </div>
 
             <div class="color">
-                <input type="checkbox" id="color9" name="color9" value="Grey" class="input">
-                <label for="color9">Grey</label>
+                <input type="checkbox" id="color9" name="color9" value="Gray" class="input">
+                <label for="color9">Gray</label>
             </div>
             
             <div class="color">
@@ -236,11 +241,17 @@
                     <label for="activity4">Cycling</label>
                 </div>
         </div>
+
+        <div class="actions">
+            <button class="filter-button mobile-hidden">
+                Apply Filters
+            </button>
+        </div>
     </aside>
 
     <div class="filter-mobile-button desktop-hidden">
         <div class="wrapper">
-            <i class="fa-solid fa-filter"></i>
+            <button id="filter"><i class="fa-solid fa-sliders"></i>FILTER</button>
         </div>
     </div>
 
