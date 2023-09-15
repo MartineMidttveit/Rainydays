@@ -179,7 +179,7 @@ figure {
 .slider {
   display: flex;
   align-items: center;
-  height: fit-content;
+  height: 550px;
   width: 40%;
   position: relative;
 }
@@ -194,7 +194,7 @@ figure {
   object-fit: contain;
   position: absolute;
   animation: fade-in-out 1.1s ease-in-out;
-  height: 550px;
+  height: 100%;
 }
 
 @keyframes fade-in-out {
@@ -367,13 +367,24 @@ input {
   }
   
   .sectionFour {
-    padding: 13% 10% 15%;
-    gap: 1.4rem;
+    padding: 10% 10% 15%;
+    gap: 1.3rem;
   }
 
-  .sectionFour img {
-    height: 200px;
-    width: 60%;
+  .sectionFour span {
+    width: 70%;
+    padding-right: 5%;
+    top: 40px;
+  }
+
+  .slider {
+    height: 400px;
+    width: 100%;
+    align-items: end;
+  }
+
+  .slider-img {
+    height: 78%;
   }
 
   .container {
@@ -428,13 +439,17 @@ input {
   }
 
   .sectionFour {
-    padding: 8% 10%;
-    gap: 2.5rem;
+    padding: 8% 10% 10%;
+    gap: 1.5rem;
   }
 
-  .sectionFour img {
-    height: 300px;
-    order: 1;
+  .sectionFour span {
+    width: 32%;
+    padding-right: 5%;
+  }
+
+  .slider {
+    height: 400px;
   }
 
   .container {
