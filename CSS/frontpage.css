@@ -176,26 +176,24 @@ figure {
   padding-bottom: 4%;
 }
 
-#trailblaze {
-  display: none;
-}
-
 .slider {
   display: flex;
   align-items: center;
   height: fit-content;
   width: 40%;
+  position: relative;
 }
 
 .slider img {
-  width: 100%;
-  border-radius: 25px;
-  object-fit: contain;
-  object-position: top;
+  display: none;
 }
 
 .slider-img {
-  animation: fade-in-out 1.3s ease-in-out;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: contain;
+  position: absolute;
+  animation: fade-in-out 1.1s ease-in-out;
   height: 550px;
 }
 

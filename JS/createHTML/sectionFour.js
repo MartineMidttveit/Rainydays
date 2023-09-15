@@ -1,6 +1,6 @@
 import removeNames from "../removeNames.js";
 
-export default function sectionFour (jacket, newProduct) {
+export default async  function sectionFour (jacket, newProduct) {
     const span = document.createElement("span");
     span.textContent = "NEW IN";
     const slider = document.createElement("div");
@@ -11,18 +11,47 @@ export default function sectionFour (jacket, newProduct) {
     imageOne.classList.add("slider-img")
     imageOne.alt = jacket.description; 
     
-    newProduct.append(span, imageOne)
-    // const imageTwo = document.createElement("img");
-    // imageTwo.src = `../<img src="/IMG/trailblaze.png"`;
-    // imageTwo.alt = jacket.description; 
-    // imageTwo.classList.add("slider-img")
 
-    // const imageThree = document.createElement("img");
-    // imageThree.src = `../<img src="/IMG/trailblaze1.png"`;
-    // imageThree.alt = jacket.description; 
-    // imageThree.classList.add("slider-img")
+    const imageTwo = document.createElement("img");
+    imageTwo.src = "../IMG/trailblaze.png";
+    imageTwo.alt = jacket.description; 
+    imageTwo.classList.add("slider-img")
 
-    // slider([imageOne, imageTwo, imageThree]);
+    const imageThree = document.createElement("img");
+    imageThree.src = "../IMG/trailblaze1.png";
+    imageThree.alt = jacket.description; 
+    imageThree.classList.add("slider-img")
+
+const slides = [imageOne, imageTwo, imageThree]
+slider.append(imageOne, imageTwo, imageThree)
+newProduct.append(span, slider)
+    let i = 1;
+
+    slides[0].style.display = "block"
+    slides[0].style.opacity = 1;
+    setInterval(() => {
+
+        for  (let j = 0; j < slides.length; j++) {
+            slides[j].style.opacity = 0;
+        }
+
+        slides[i].style.opacity = 1;
+        slides[i].style.display = "block"
+    if (i === 2) {
+      i = 0;
+    } else i++;
+  }, 5000);
+  
+    // slider([imageOne, imageTwo, imageThree])
+
+// setInterval(()=>{
+//     if(slidePosition==totalSlider-1){
+//       slidePosition=0;
+//     }else{
+//       slidePosition++;
+//     }
+//     updatePosition();
+//   },5000);
 
     const container = document.createElement("div");
     container.classList.add("container");
@@ -66,3 +95,24 @@ export default function sectionFour (jacket, newProduct) {
 }
 
 
+// const slides = [imageOne, imageTwo, imageThree];
+
+// let currentIndex = 0;
+
+// function showSlide(index) {
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.opacity = 0;
+//     }
+//     slides[index].style.opacity = 1;
+// }
+
+// function nextSlide() {
+//     currentIndex = (currentIndex + 1) % slides.length;
+//     showSlide(currentIndex);
+// }
+
+// // Initial display
+// showSlide(currentIndex);
+
+// // Automatically switch to the next slide every 5 seconds (adjust as needed)
+// setInterval(nextSlide, 5000);
