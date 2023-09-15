@@ -2,15 +2,20 @@ import fetchJackets from "../fetchJackets.js";
 import favorite from "../favorite.js";
 import popularProducts from "../createHTML/popularProducts.js";
 import sectionFour from "../createHTML/sectionFour.js";
+import createError from "../createHTML/createError.js";
 
 const productList = document.querySelector(".product-list");
 const newProduct = document.querySelector(".sectionFour");
 
-const url = "https://api.noroff.dev/api/v1/rainy-days";
+const url = "https://api.noroff.dev/api/v1/rainy-dayss";
 const allJackets = await fetchJackets(url);
 
-const allNumbers = []
-for (let index = 0; index <= 3; index++) {    
+if (allJackets.errors) {
+    createError(allJackets, newProduct)
+}
+else  {
+    const allNumbers = []
+    for (let index = 0; index <= 3; index++) {    
     const randomNumber = Math.floor (Math.random() * allJackets.length)
 
     if(allNumbers.includes(randomNumber)) {
@@ -27,6 +32,8 @@ allNumbers.forEach(number => {
 
 favorite();
 sectionFour(allJackets[10], newProduct);
+
+}
 
 
 

@@ -1,5 +1,5 @@
-export default function createError() {
-    const errorBox = document.createElement("section");
+export default function createError(error, errorBox) {
+    // const errorBox = document.createElement("section");
     errorBox.classList.add("error-box");
 
     const wrapper = document.createElement("div");
@@ -12,10 +12,12 @@ export default function createError() {
     const errorMessage = document.createElement("p");
     errorMessage.textContent = "Could not load products due to " + error.errorMessage; // SJEKKE AT DENNE ER OK
 
-    const refresh = document.createElement("a"); // denne er for å refreshe siden.
+    const refresh = document.createElement("a");
+    refresh.setAttribute("id", "refresh"); 
 
     const refreshBtn = document.createElement("i");
-    refreshBtn.classList.add("fa-solid fa-arrows-rotate");
+    refreshBtn.classList.add("fa-solid");
+    refreshBtn.classList.add("fa-arrows-rotate");
     refreshBtn.textContent = "Refresh the page";
 
     const darkCloud = document.createElement("div");
@@ -24,6 +26,9 @@ export default function createError() {
     const cloud = document.createElement("img");
     cloud.src = "../IMG/darkcloud.png";
     cloud.alt = "A dark thunder cloud";
+
+    const lightening = document.createElement("div");
+    lightening.classList.add("lightening");
 
     const lighteningOne = document.createElement("img");
     lighteningOne.classList.add("light");
@@ -39,6 +44,14 @@ export default function createError() {
     lighteningThree.classList.add("light");
     lighteningThree.src = "../IMG/lightening-3.png";
     lighteningThree.alt = "Yellow, spiked lightening";
+
+    errorBox.append(wrapper);
+    wrapper.append(title, errorMessage, refresh, darkCloud, lightening);
+    darkCloud.append(cloud);
+    lightening.append(lighteningOne, lighteningTwo, lighteningThree);
+    // refresh(refreshBtn);
+    
 }
+
 
 
