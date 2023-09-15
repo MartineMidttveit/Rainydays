@@ -10,7 +10,11 @@ export default function createError(error, errorBox) {
     title.textContent = "WOOPS... Error!";
 
     const errorMessage = document.createElement("p");
-    errorMessage.textContent = "Could not load products due to " + error.statusCode + " " + error.status; // SJEKKE AT DENNE ER OK
+    errorMessage.textContent = "Could not load products due to "; 
+
+    const errorSpan = document.createElement("span");
+    errorSpan.classList.add("bold");
+    errorSpan.textContent = error.statusCode + " " + error.status;
 
     const refresh = document.createElement("a");
     refresh.setAttribute("id", "refresh"); 
@@ -46,6 +50,7 @@ export default function createError(error, errorBox) {
     lighteningThree.alt = "Yellow, spiked lightening";
 
     errorBox.append(wrapper);
+    errorMessage.append(errorSpan);
     wrapper.append(title, errorMessage, refresh, darkCloud, lightening);
     darkCloud.append(cloud);
     lightening.append(lighteningOne, lighteningTwo, lighteningThree);

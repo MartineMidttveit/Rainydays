@@ -155,7 +155,7 @@ figure {
   position: relative;
 }
 
-.sectionFour span {
+.newIn {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -443,7 +443,7 @@ input {
     gap: 1.5rem;
   }
 
-  .sectionFour span {
+  .newIn {
     width: 32%;
     padding-right: 5%;
   }

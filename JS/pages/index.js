@@ -6,13 +6,15 @@ import createError from "../createHTML/createError.js";
 
 const productList = document.querySelector(".product-list");
 const newProduct = document.querySelector(".sectionFour");
+const sectionTree = document.querySelector(".sectionTree");
+
 
 const url = "https://api.noroff.dev/api/v1/rainy-dayss";
 const allJackets = await fetchJackets(url);
 
 if (allJackets.errors) {
-  
     createError(allJackets, newProduct)
+    createError(allJackets, sectionTree)
 }
 else  {
     const allNumbers = []
@@ -33,7 +35,6 @@ allNumbers.forEach(number => {
 
 favorite();
 sectionFour(allJackets[10], newProduct);
-
 }
 
 

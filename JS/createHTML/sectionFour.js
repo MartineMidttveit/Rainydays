@@ -2,6 +2,7 @@ import removeNames from "../removeNames.js";
 
 export default async  function sectionFour (jacket, newProduct) {
     const span = document.createElement("span");
+    span.classList.add("newIn")
     span.textContent = "NEW IN";
     const slider = document.createElement("div");
     slider.classList.add("slider");
@@ -22,9 +23,9 @@ export default async  function sectionFour (jacket, newProduct) {
     imageThree.alt = jacket.description; 
     imageThree.classList.add("slider-img")
 
-const slides = [imageOne, imageTwo, imageThree]
-slider.append(imageOne, imageTwo, imageThree)
-newProduct.append(span, slider)
+    const slides = [imageOne, imageTwo, imageThree]
+    slider.append(imageOne, imageTwo, imageThree)
+    newProduct.append(span, slider)
     let i = 1;
 
     slides[0].style.display = "block"
