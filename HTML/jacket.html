@@ -22,7 +22,7 @@
     <script defer src="/JS/header.js"></script>
   </head>
 <body>
-
+<main>
 <!--HEADER-->
 
 <div class="banner">
@@ -63,10 +63,7 @@
     </div>
 </header>
     
-
-
 <!--HEADER-->
-<main>
     <section class="product-container">
         <div class="product-images">
 
@@ -87,19 +84,18 @@
                     </div>
                 </div>
 
-            <label for="sizes">Choose a size:</label>
-            <input list="sizes" id="sizes" name="sizes" placeholder="Small">
-                <datalist id="sizes">
-                    <option value="X-Small"></option>
-                    <option value="Small"></option>
-                    <option value="Medium"></option>
-                    <option value="Large"></option>
-                    <option value="X-Large"></option>
-                </datalist>
+            <p>Choose a size:</p>
+            <div class="sizes">
+                <button class="sizeBtn">XS</button>
+                <button class="sizeBtn">S</button>
+                <button class="sizeBtn">M</button>
+                <button class="sizeBtn">L</button>
+                <button class="sizeBtn">XL</button>
+                <button class="sizeBtn">XXL</button>
+            </div>
                 <button class="dark-green-btn">BUY NOW</button>
             </div>
     </section>
-</main>
 
 <script src="/JS/jacket.js"></script>
 
@@ -134,6 +130,6 @@
         </div>
     </div>  
 </footer>
-
+</main>
 </body>
 </html>
