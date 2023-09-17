@@ -139,6 +139,12 @@
     padding-right: 5%;
 }
 
+.product-information li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding: 1% 0%;
+}
+
 .product-information .medium-title {
     padding-bottom: 3%;
 }
