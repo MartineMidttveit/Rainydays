@@ -1,4 +1,5 @@
 import removeNames from "../removeNames.js";
+import addToCart from "../cart/addToCart.js";
 
 export default function popularProducts(jacket, productList) {
     const jacketName = removeNames(jacket)
@@ -40,6 +41,10 @@ export default function popularProducts(jacket, productList) {
     btn.classList.add("dark-green-btn");
     btn.classList.add("buy-now");
     btn.textContent = "BUY NOW";
+    btn.addEventListener("click", (e) => {
+        e.preventDefault;
+        console.log(e.target.value)
+    })
 
     container.append(icon,aElement);
     aElement.append(jacketImage, productInfo);

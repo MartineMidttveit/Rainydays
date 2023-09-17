@@ -36,25 +36,6 @@
     transform: scale(1.1);
 }
 
-.small-img {
-    display: flex;
-    gap: 1.9rem;
-    cursor: pointer;
-}
-
-.small-img img {
-    height: 60px;
-    width: 65px;
-    object-fit: cover;
-    transition: transform .4s ease-in-out;
-}
-
-#img-1:hover,
-#img-2:hover,
-#img-3:hover {
-    transform: scale(1.2);
-}
-
 .product-info {
     width: 60%;
     color: #233F3F;
