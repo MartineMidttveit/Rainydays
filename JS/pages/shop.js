@@ -1,4 +1,10 @@
-var menCheckbox = document.getElementById("men");
+import fetchJackets from ""
+
+const container = document.querySelector(".product-list")
+
+
+const menCheckbox = document.getElementById("men");
+
 
 menCheckbox.addEventListener("click", function() {
 
@@ -10,7 +16,7 @@ menCheckbox.addEventListener("click", function() {
     }
 });
 
-var womenCheckbox = document.getElementById("women");
+const womenCheckbox = document.getElementById("women");
 
 womenCheckbox.addEventListener("click", function() {
 
@@ -21,3 +27,7 @@ womenCheckbox.addEventListener("click", function() {
         }, 100); 
     }
 });
+
+
+
+//product-list

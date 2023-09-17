@@ -75,7 +75,7 @@ export default async  function sectionFour (jacket, newProduct) {
     list.append(item1,item2,item3,item4,item5)
     
     const shopBtn = document.createElement("a");
-    shopBtn.classList.add("dark-green-btn")
+    shopBtn.classList.add("green-btn")
     shopBtn.textContent = "BUY NOW";
     shopBtn.href = `/HTML/jacket.html?id=${jacket.id}`
 

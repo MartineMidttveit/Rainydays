@@ -19,7 +19,7 @@ async function getFemaleJackets() {
                         <img src="${jacket.image}" alt="">
                         <div class="product-info">
                             <h3 class="small-title">${jacket.title}</h3>
-                            <p class="price">${jacket.price}</p>
+                            <p class="price">£ ${jacket.price}</p>
                             <p class="gender">${jacket.gender}</p>
                             <button class="dark-green-btn">BUY NOW</button>
                         </div>
