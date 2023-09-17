@@ -12,7 +12,7 @@ export default function popularProducts(jacket, productList) {
     icon.setAttribute("id", "favorite");
 
     const aElement = document.createElement("a");
-    aElement.href=`/HTML/jacket.html?id=jacket.id`
+    aElement.href=`/HTML/jacket.html?id=${jacket.id}`
 
     const jacketImage = document.createElement("img");
     jacketImage.src= jacket.image;
@@ -42,8 +42,9 @@ export default function popularProducts(jacket, productList) {
     btn.classList.add("buy-now");
     btn.textContent = "BUY NOW";
     btn.addEventListener("click", (e) => {
-        e.preventDefault;
-        console.log(e.target.value)
+        e.preventDefault()
+        console.log(e.target.parentElement.parentElement)
+
     })
 
     container.append(icon,aElement);
