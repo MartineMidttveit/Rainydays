@@ -63,6 +63,8 @@
     font-size: 1rem;
 }
 
+/* Colors */
+
 .colors {
     height: fit-content;
     flex-direction: column;
@@ -98,7 +100,6 @@
     background-color: black;
 }
 
-
 /* Sizes */
 
 .sizes {
@@ -122,15 +123,92 @@
     font-weight: 500;
 }
 
+/* DETAILS / SUMMARY */
 
+.product-details {
+    padding: 5% 10%;
+    display: flex;
+}
 
+.product-information,
+.details {
+    width: 50%;
+}
 
-/* <label for="sizes">Choose a size:</label>
-            <input list="sizes" id="sizes" name="sizes" />
-                <datalist id="sizes">
-                    <option value="X-Small"></option>
-                    <option value="Small"></option>
-                    <option value="Medium"></option>
-                    <option value="Large"></option>
-                    <option value="X-Large"></option>
-                </datalist>
+.product-information {
+    padding-right: 5%;
+}
+
+.product-information .medium-title {
+    padding-bottom: 3%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding-left: 5%;
+}
+
+/* SIZEGUIDE */
+
+.sizeguide {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    padding: 3% 0%;
+}
+
+details {
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.size p {
+    font-weight: 500;
+}
+
+.size,
+.waist {
+    background-color: #BED8D5;
+}
+
+.chest,
+.sleeve-length {
+    background-color: white;
+}
+
+.size,
+.chest,
+.waist,
+.sleeve-length {
+    padding: 10px;
+}
+
+.size-label {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+/* REVIEWS */
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    margin: 2% 0%;
+    padding: 4%;
+}
+
+.review .small-title {
+    padding-bottom: 2%;
+}
+
+.review .rating {
+    font-size: 1rem;
+}
