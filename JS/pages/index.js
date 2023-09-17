@@ -9,7 +9,7 @@ const newProduct = document.querySelector(".sectionFour");
 const sectionTree = document.querySelector(".sectionTree");
 
 
-const url = "https://api.noroff.dev/api/v1/rainy-dayss";
+const url = "https://api.noroff.dev/api/v1/rainy-days";
 const allJackets = await fetchJackets(url);
 
 if (allJackets.errors) {
