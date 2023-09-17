@@ -6,18 +6,28 @@ export default function addToCart (id) {
         id: id, 
         quantity: 1
     }
+
+   
     if (prevJackets === null) {
-        localStorage.setItem("jackets", JSON.stringify(newJacket));
+        localStorage.setItem("jackets", JSON.stringify([newJacket]));
+        
     }
 
     else {
-    prevJackets.forEach(jacket => {
-        if (jacket.id === id) {
-            jacket.quantity ++;
-        }
-        else {
-            localStorage.setItem("jackets", JSON.stringify([...prevJackets, newJacket]));
-        }
-    })
+        let jacketExists = false;
+
+        prevJackets.forEach((jacket) => {
+            if (jacket.id === id) {
+                jacket.quantity++;
+                jacketExists = true;
+            }
+            
+        }) 
+        if (!jacketExists) {
+            prevJackets.push(newJacket);
+
+            }
+         
+            localStorage.setItem("jackets", JSON.stringify(prevJackets));
 }
 }

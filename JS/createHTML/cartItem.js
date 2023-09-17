@@ -1,14 +1,20 @@
 import removeNames from "../removeNames.js";
 
-export default function cartItem(jacket) {
+export default function cartItem(jacket, container) {
     const jacketName = removeNames(jacket)
 
     const productGrid = document.createElement("div");
     productGrid.classList.add("product-grid");
 
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("image-container");
+
     const productImg = document.createElement("img");
+    productImg.classList.add("product-images");
     productImg.src = jacket.image;
     productImg.alt = jacket.description;
+
+    imgContainer.append(productImg);
 
     const productName = document.createElement("div");
     productName.classList.add("product-name");
@@ -41,9 +47,10 @@ export default function cartItem(jacket) {
     productPrice.classList.add("product-price");
 
     const exactPrice = document.createElement("p");
-    exactPrice.textContent = jacket.price;
+    exactPrice.textContent = "£ " + jacket.price;
 
     productPrice.append(exactPrice);
 
-    productGrid.append(productImg, productName, productSize, quantity, productPrice)
+    productGrid.append(imgContainer, productName, productSize, quantity, productPrice)
+    container.append(productGrid)
 }

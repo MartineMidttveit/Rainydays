@@ -43,14 +43,18 @@ export default function popularProducts(jacket, productList) {
     btn.textContent = "BUY NOW";
     btn.addEventListener("click", (e) => {
         e.preventDefault()
-        console.log(e.target.parentElement.parentElement)
+
+        const curItem = e.target.parentElement.parentElement;
+        const url = new URL(curItem);
+        const currentID = url.searchParams.get("id");
+        
+        addToCart(currentID)
 
     })
 
     container.append(icon,aElement);
     aElement.append(jacketImage, productInfo);
     productInfo.append(h3, prices, gender, btn);
-
 
     productList.appendChild(container);
 
