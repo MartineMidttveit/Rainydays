@@ -22,7 +22,9 @@ export default function createError(error, errorBox) {
     const refreshBtn = document.createElement("i");
     refreshBtn.classList.add("fa-solid");
     refreshBtn.classList.add("fa-arrows-rotate");
-    refreshBtn.textContent = "Refresh the page";
+
+    const refreshText = document.createElement("p");
+    refreshText.textContent = "Refresh the page";
 
     const darkCloud = document.createElement("div");
     darkCloud.classList.add("darkcloud");
@@ -54,13 +56,11 @@ export default function createError(error, errorBox) {
     wrapper.append(title, errorMessage, refresh, darkCloud, lightening);
     darkCloud.append(cloud);
     lightening.append(lighteningOne, lighteningTwo, lighteningThree);
-    refresh.append(refreshBtn);
-    
+    refresh.append(refreshBtn, refreshText);
 
     refresh.addEventListener("click", (e) => {
         location.reload();
     })
-
 }
 
 
