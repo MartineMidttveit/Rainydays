@@ -38,6 +38,7 @@ export default function popularProducts(jacket, productList) {
 
     const btn = document.createElement("button");
     btn.classList.add("dark-green-btn");
+    btn.classList.add("buy-now");
     btn.textContent = "BUY NOW";
 
     container.append(icon,aElement);

@@ -190,6 +190,12 @@ ul li:hover {
     height: fit-content;
 }
 
+.product-info .gender,
+.product-info .discountedPrice {
+    margin: 0;
+    padding: 0;
+}
+
 .product-info .small-title {
     font-size: .85rem;
 }
