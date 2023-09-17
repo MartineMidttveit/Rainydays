@@ -25,6 +25,17 @@ header {
     color: hsl(0, 0%, 95%);
 }
 
+.banner-icons {
+    color: hsl(0, 0%, 95%);
+    position: absolute;
+    right: 9%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
 header {
     top: 50px;
     height: 90px;
