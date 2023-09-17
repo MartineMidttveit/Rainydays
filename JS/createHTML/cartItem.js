@@ -38,10 +38,33 @@ export default function cartItem(jacket, container) {
     const quantity = document.createElement("div");
     quantity.classList.add("product-quantity");
 
+    const quantityContainer = document.createElement("div");
+    quantityContainer.classList.add("quantity-container");
+
+    quantity.append(quantityContainer);
+
+    const minus = document.createElement("button");
+    minus.classList.add("quantityBtn")
+
+    const minusIcon = document.createElement("i");
+    minusIcon.classList.add("fa-solid");
+    minusIcon.classList.add("fa-minus");
+
+    minus.append(minusIcon)
+
     const amount = document.createElement("p");
     amount.textContent = "1";
 
-    quantity.append(amount);
+    const plus = document.createElement("button");
+    plus.classList.add("quantityBtn")
+    
+    const plusIcon = document.createElement("i");
+    plusIcon.classList.add("fa-solid");
+    plusIcon.classList.add("fa-plus");
+
+    plus.append(plusIcon)
+
+    quantityContainer.append(minus, amount, plus)
 
     const productPrice = document.createElement("div");
     productPrice.classList.add("product-price");

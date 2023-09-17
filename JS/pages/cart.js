@@ -1,18 +1,13 @@
 import cartItem from "../createHTML/cartItem.js";
 import fetchJackets from "../fetchJackets.js";
 
-
-const cartItems = document.querySelector(".products-list-container");
+const cartItems = document.querySelector(".clickedProducts");
 
 const url = "https://api.noroff.dev/api/v1/rainy-days";
 const allJackets = await fetchJackets(url);
 
 const getPrevJackets = localStorage.getItem("jackets");
 let prevJackets = JSON.parse(getPrevJackets);
-
-
-
-
 
 prevJackets.forEach(jacket => {
 
@@ -25,5 +20,3 @@ prevJackets.forEach(jacket => {
    })
     cartItem(foundJacket, cartItems)
 })
-
-// prevJackets.find()
