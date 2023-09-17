@@ -18,12 +18,11 @@ async function getJackets(url) {
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <p>Based on 4 reviews</p>
+                    <p>Based on 2 reviews</p>
                 </div>
 
                 <p>${jacket.description} Crafted with meticulous attention to detail, this jacket seamlessly fuses form and function, 
-                ensuring you stay dry without compromising on your fashion-forward sensibilities. When the skies darken and raindrops start to fall, 
-                the Thunderbolt Jacket stands as your steadfast shield against the elements. </p>
+                ensuring you stay dry without compromising on your fashion-forward sensibilities.</p>
                 </div>`
 }
 
