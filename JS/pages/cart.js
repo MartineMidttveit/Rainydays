@@ -1,5 +1,6 @@
 import cartItem from "../createHTML/cartItem.js";
 import fetchJackets from "../fetchJackets.js";
+import updateCart from "../cart/updateCart.js";
 
 const cartItems = document.querySelector(".clickedProducts");
 
@@ -9,14 +10,17 @@ const allJackets = await fetchJackets(url);
 const getPrevJackets = localStorage.getItem("jackets");
 let prevJackets = JSON.parse(getPrevJackets);
 
-prevJackets.forEach(jacket => {
+console.log(prevJackets);
+console.log(allJackets);
 
-   const foundJacket = allJackets.find((item) => {
-    console.log(item.id)
-    console.log(jacket.id)
+updateCart();
+
+prevJackets.forEach((jacket) => {
+  const foundJacket = allJackets.find((item) => {
     if (item.id === jacket.id) {
-            return  jacket;
+      return jacket;
     }
-   })
-    cartItem(foundJacket, cartItems, jacket.quantity)
-})
+  });
+  console.log(foundJacket);
+  cartItem(foundJacket, cartItems, jacket.quantity);
+});

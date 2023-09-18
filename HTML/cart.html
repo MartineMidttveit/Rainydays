@@ -1,166 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the latest digital games with GameHub - the universe of games">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the latest digital games with GameHub - the universe of games"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b515e79b0f.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="/CSS/header.css">
-    <link rel="stylesheet" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/frontpage.css">
-    <link rel="stylesheet" href="/CSS/cart.css">
+    <link rel="stylesheet" href="/CSS/header.css" />
+    <link rel="stylesheet" href="/CSS/footer.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/frontpage.css" />
+    <link rel="stylesheet" href="/CSS/cart.css" />
 
     <title>RainyDays | Shoppingcart</title>
- 
-    <script defer src="/JS/header.js"> </script>
+
+    <script defer src="/JS/header.js"></script>
     <script defer type="module" src="/JS/pages/cart.js"></script>
+    <script defer type="module" src="/JS/script.js"></script>
   </head>
-<body>
+  <body>
+    <!--HEADER-->
 
-<!--HEADER-->
+    <div class="banner">
+      <p class="banner-text">Free shipping on all orders above £120!</p>
 
-<div class="banner">
-    <p class="banner-text"></p>
-
-    <div class="banner-icons">
+      <div class="banner-icons">
         <i class="fa-solid fa-user"></i>
         <p>FAVORITES</p>
+      </div>
     </div>
-</div>
-    
-<header>
-    <figure class="logo-container">
-        <a href="/index.html"><img src="/IMG/logo.png" alt="" id="logo"></a>
-    </figure>
-    
-    <div class="hamburger-navigation">
+
+    <header>
+      <figure class="logo-container">
+        <a href="/index.html"><img src="/IMG/logo.png" alt="" id="logo" /></a>
+      </figure>
+
+      <div class="hamburger-navigation">
         <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    
+
         <div class="search-bar">
-            <input type="text" name="searchbar">
-            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" name="searchbar" />
+          <button id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-    
+
         <nav class="nav-header">
-            <a class="nav-item" href="/HTML/shop.html">SHOP</a>
-            <a class="nav-item" href="/HTML/about.html">ABOUT</a>
-            <a class="nav-item" href="/HTML/contact.html">CONTACT</a>
-            <a class="nav-item" href="/HTML/cart.html">
-                CART
-                <span class="count"></span>
-            </a>
+          <a class="nav-item" href="/HTML/shop.html">SHOP</a>
+          <a class="nav-item" href="/HTML/about.html">ABOUT</a>
+          <a class="nav-item" href="/HTML/contact.html">CONTACT</a>
+          <a class="nav-item" href="/HTML/cart.html">
+            CART
+            <span class="count"></span>
+          </a>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-
-<section class="shoppingcart">
-    <h1 class="medium-title">YOUR <span>SHOPPINGCART.</span></h1>
+    <main>
+      <section class="shoppingcart">
+        <h1 class="medium-title">YOUR <span>SHOPPINGCART.</span></h1>
         <div class="cart-content-container">
-			<div class="product-grid table-titles">
-				<h2 class="small-title">PRODUCT:</h2>
-				<h2 class="small-title">NAME:</h2>
-				<h2 class="small-title">SIZE:</h2>
-				<h2 class="small-title">QUANTITY:</h2>
-				<h2 class="small-title">PRICE:</h2>
-			</div>
-	
-			<span id="line"></span>
-	
-			<div class="products-list-container">
-                <div class="clickedProducts"></div>
-				
-	
-				<div class="totalPrice">
-					<p class="bold">TOTAL:</p>
-					<p>£260</p>
-				</div>
+          <div class="product-grid table-titles">
+            <h2 class="small-title">PRODUCT:</h2>
+            <h2 class="small-title">NAME:</h2>
+            <h2 class="small-title">SIZE:</h2>
+            <h2 class="small-title">QUANTITY:</h2>
+            <h2 class="small-title">PRICE:</h2>
+          </div>
 
-				<div class="priceShipping">
-					<p class="bold">SHIPPING</p>
-					<p>FREE</p>
-				</div>
-			</div>
-		</div>
+          <span id="line"></span>
+
+          <div class="products-list-container">
+            <div class="clickedProducts"></div>
+
+            <div class="totalPrice">
+              <p class="bold">TOTAL:</p>
+              <p class="price-total"></p>
+            </div>
+
+            <div class="priceShipping">
+              <p class="bold">SHIPPING:</p>
+              <p class="shipping-cost"></p>
+            </div>
+          </div>
+        </div>
 
         <div class="buttons">
-            <a href="/HTML/shop.html" class="section-title">
-                <h2 class="medium-title">SHOP MORE</h2>
-                <figure><img src="/IMG/arrow.png" alt="An arrow" id="arrow-right"></figure>
-            </a>
-        
-            <div class="goToPay">
-                <p class="bold">GO TO</p>
-                <a href="/HTML/orderSummary.html" class="dark-green-btn">CHECKOUT</a>
-            </div>
+          <a href="/HTML/shop.html" class="section-title">
+            <h2 class="medium-title">SHOP MORE</h2>
+            <figure>
+              <img src="/IMG/arrow.png" alt="An arrow" id="arrow-right" />
+            </figure>
+          </a>
+
+          <div class="goToPay">
+            <p class="bold">GO TO</p>
+            <a href="/HTML/orderSummary.html" class="dark-green-btn"
+              >CHECKOUT</a
+            >
+          </div>
         </div>
-</section>
+      </section>
 
-<section class="signUp">
-    <figure class="signUpImg">
-        <img src="/IMG/friends.png" alt="A group of friends hiking in the mountains">
-    </figure>
+      <section class="signUp">
+        <figure class="signUpImg">
+          <img
+            src="/IMG/friends.png"
+            alt="A group of friends hiking in the mountains"
+          />
+        </figure>
 
-    <div class="signUpNewsletter">
-        <h3 class="medium-title">GET 10% DISCOUNT</h3>
-        <p>
-            Sign up for our newsletter and get 10% off your first order. Also get notified about 
-            new releases, favorite products back in stock and more!
-        </p>
+        <div class="signUpNewsletter">
+          <h3 class="medium-title">GET 10% DISCOUNT</h3>
+          <p>
+            Sign up for our newsletter and get 10% off your first order. Also
+            get notified about new releases, favorite products back in stock and
+            more!
+          </p>
 
-        <form class="subscription">
-            <input type="text" placeholder="example-email@email.com">
+          <form class="subscription">
+            <input type="text" placeholder="example-email@email.com" />
             <button class="dark-green-btn">SUBSCRIBE</button>
-        </form>
-    </div>
-</section>
+          </form>
+        </div>
+      </section>
 
+      <!-- FOOTER -->
 
-<!-- FOOTER -->
-
-<footer>
-    <div id="footer-wrapper">
-        <div class="col" id="col-1">
+      <footer>
+        <div id="footer-wrapper">
+          <div class="col" id="col-1">
             <p class="small-titles">© RainyDays 2023</p>
             <p class="small-titles">Terms & Conditions</p>
             <p class="small-titles">Privacy policy</p>
-        </div>
+          </div>
 
-        <div class="col" id="col-2">
+          <div class="col" id="col-2">
             <a href="/HTML/visit.html" class="footer-heading">CONTACT</a>
             <a href="/HTML/contact.html" class="small-titles">Contact us</a>
             <p class="small-titles">Customer service</p>
             <p class="small-titles">FAQ</p>
-        </div>
+          </div>
 
-        <div class="col" id="col-3">
+          <div class="col" id="col-3">
             <a href="/HTML/about.html" class="footer-heading">ABOUT US</a>
             <a href="/HTML/stores.html" class="small-titles">Our stores</a>
             <a href="/HTML/about.html" class="small-titles">About us</a>
             <p class="small-titles">Visit</p>
-        </div>
+          </div>
 
-        <div class="col" id="col-4">
+          <div class="col" id="col-4">
             <p class="footer-heading">SOCIAL MEDIA:</p>
-            <a href="#" aria-label="Clickable button of the Instagram-logo redirecting to the museum's Instagram-account"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="Clickable button of the Facebook-logo redirecting to the museum's Facebook-account"><i class="fa-brands fa-square-facebook"></i></a>
+            <a
+              href="#"
+              aria-label="Clickable button of the Instagram-logo redirecting to the museum's Instagram-account"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Clickable button of the Facebook-logo redirecting to the museum's Facebook-account"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </div>
         </div>
-    </div>  
-</footer>
-
-</main>
-</body>
+      </footer>
+    </main>
+  </body>
 </html>

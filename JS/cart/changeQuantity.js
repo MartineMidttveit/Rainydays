@@ -1,23 +1,24 @@
-export default function quantity(itemId, numItems) {
-    const getItems = localStorage.getItem("jackets");
-    const parsedItem = JSON.parse(getItems);
-  
-    console.log(parsedItem);
-    const updatedList = parsedItem
-      .map((item, i) => {
-        if (itemId === item.id) {
-          if (numItems <= 0) {
-            return null;
-          } else {
-            item.quantity = numItems;
-            return item;
-          }
-        } else {
-          return item;
-        }
-      })
-      .filter((item) => item !== null);
-  
-    localStorage.setItem("jackets", JSON.stringify(updatedList));
-  }
+//
 
+
+export default function quantity(item, numItems) {
+  const getItems = localStorage.getItem("jackets");
+  const parsedItem = JSON.parse(getItems);
+
+  const updatedList = parsedItem
+    .map((pItem) => {
+      if (item.id === pItem.id) {
+        if (numItems <= 0) {
+          return null;
+        } else {
+          pItem.quantity = numItems;
+          return pItem;
+        }
+      } else {
+        return pItem;
+      }
+    })
+    .filter((pItem) => pItem !== null);
+
+  localStorage.setItem("jackets", JSON.stringify(updatedList));
+}
