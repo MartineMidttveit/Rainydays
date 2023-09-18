@@ -1,6 +1,6 @@
 var banner = document.querySelector(".banner-text"); 
     var texts = [
-        "Free shipping on all orders above £120!",
+        "Free shipping on all orders above £250!",
         "Worldwide express shipping!"
     ];
     var currentIndex = 0;
