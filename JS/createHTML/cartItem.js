@@ -59,6 +59,8 @@ export default function cartItem(jacket, container, numJackets) {
  
         exactPrice.textContent = "£ " + (jacket.price  * numJackets).toFixed(2);
         if (numJackets <= 0) productGrid.remove();
+        changeQuantity(productGrid.dataId, numJackets)
+     
     })
 
     const amount = document.createElement("p");
@@ -86,7 +88,7 @@ export default function cartItem(jacket, container, numJackets) {
     productPrice.classList.add("product-price");
 
     const exactPrice = document.createElement("p");
-    exactPrice.textContent = "£ " + jacket.price  * numJackets;
+    exactPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
 
     productPrice.append(exactPrice);
 
