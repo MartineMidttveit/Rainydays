@@ -18,5 +18,5 @@ prevJackets.forEach(jacket => {
             return  jacket;
     }
    })
-    cartItem(foundJacket, cartItems)
+    cartItem(foundJacket, cartItems, jacket.quantity)
 })

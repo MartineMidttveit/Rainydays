@@ -7,10 +7,8 @@ export default function addToCart (id) {
         quantity: 1
     }
 
-   
     if (prevJackets === null) {
         localStorage.setItem("jackets", JSON.stringify([newJacket]));
-        
     }
 
     else {
@@ -25,7 +23,6 @@ export default function addToCart (id) {
         }) 
         if (!jacketExists) {
             prevJackets.push(newJacket);
-
             }
          
             localStorage.setItem("jackets", JSON.stringify(prevJackets));

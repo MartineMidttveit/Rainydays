@@ -1,9 +1,11 @@
 import removeNames from "../removeNames.js";
+import changeQuantity from "../cart/changeQuantity.js"
 
-export default function cartItem(jacket, container) {
+export default function cartItem(jacket, container, numJackets) {
     const jacketName = removeNames(jacket)
 
     const productGrid = document.createElement("div");
+    productGrid.dataId = jacket.id
     productGrid.classList.add("product-grid");
 
     const imgContainer = document.createElement("div");
@@ -51,9 +53,16 @@ export default function cartItem(jacket, container) {
     minusIcon.classList.add("fa-minus");
 
     minus.append(minusIcon)
+    minus.addEventListener("click",(e) => {
+        numJackets--;
+        amount.textContent = numJackets;
+ 
+        exactPrice.textContent = "£ " + (jacket.price  * numJackets).toFixed(2);
+        if (numJackets <= 0) productGrid.remove();
+    })
 
     const amount = document.createElement("p");
-    amount.textContent = "1";
+    amount.textContent = numJackets;
 
     const plus = document.createElement("button");
     plus.classList.add("quantityBtn")
@@ -62,6 +71,13 @@ export default function cartItem(jacket, container) {
     plusIcon.classList.add("fa-solid");
     plusIcon.classList.add("fa-plus");
 
+    plus.addEventListener("click",(e) => {
+        numJackets++;
+        console.log(productGrid.dataId)
+        amount.textContent = numJackets;
+        exactPrice.textContent = "£ " + (jacket.price  * numJackets).toFixed(2);
+        changeQuantity(productGrid.dataId, numJackets)
+    })
     plus.append(plusIcon)
 
     quantityContainer.append(minus, amount, plus)
@@ -70,7 +86,7 @@ export default function cartItem(jacket, container) {
     productPrice.classList.add("product-price");
 
     const exactPrice = document.createElement("p");
-    exactPrice.textContent = "£ " + jacket.price;
+    exactPrice.textContent = "£ " + jacket.price  * numJackets;
 
     productPrice.append(exactPrice);
 
