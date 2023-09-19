@@ -300,3 +300,10 @@ header {
         right: 14%;
     }
 }
+
+@media only screen and (min-width: 1181px) and (max-width: 1440px) {
+    .count {
+        right: 6.7%;
+        top: 15%;
+    }
+}

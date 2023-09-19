@@ -222,3 +222,9 @@ img {
         padding: 10%;
     }
   }
+
+  @media only screen and (min-width: 1181px) and (max-width: 1440px) {
+    #green-container .text-container {
+       padding-top: 4%;
+    }
+}

@@ -219,3 +219,39 @@
       padding-bottom: 4%;
     }
   }
+
+  @media only screen and (min-width: 1181px) and (max-width: 1440px) {
+
+    .contact-content {
+      align-items: center;
+    }
+
+    .figure {
+      width: 40%;
+      height: 100%;
+    }
+
+    .container {
+      gap: 1.5rem;
+    }
+
+    .faq {
+      gap: 1rem;
+    }
+
+    .contact-details .medium-title {
+      padding-left: 0%;
+    }
+
+    .faq-box {
+      padding-left: 0%;
+    }
+
+    .bottom {
+      padding: 5% 10%;
+    }
+
+    details {
+      font-size: .9rem;
+    }
+  }

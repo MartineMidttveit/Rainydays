@@ -212,3 +212,14 @@
         max-height: 280px;
     }
 }
+
+@media only screen and (min-width: 1181px) and (max-width: 1440px) {
+    .about,
+    .visit {
+        padding: 7% 15% 10%;
+    }
+
+    #stores {
+        padding-left: 0;
+    }
+}
