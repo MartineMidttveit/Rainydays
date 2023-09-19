@@ -1,6 +1,3 @@
-//
-
-
 export default function quantity(item, numItems) {
   const getItems = localStorage.getItem("jackets");
   const parsedItem = JSON.parse(getItems);
