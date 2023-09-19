@@ -1,7 +1,4 @@
-
 .product-container {
-    height: fit-content;
-    top: 150px;
     background-color: #FEFDFD;
     padding: 4% 10%;
     display: flex;
@@ -16,14 +13,14 @@
     width: 40%;
 }
 
-.thunderbolt {
+.prodImg {
     height: 750px;
     width: 500px;
     position: relative;
     overflow: hidden;
 }
 
-#thunderbolt-jacket {
+.prodImg {
     object-fit: contain;
     height: 90%;
     padding: 8% 8% 0%;
@@ -31,7 +28,7 @@
     transition: transform .6s ease-in-out;
 }
 
-.thunderbolt:hover img {
+.prodImg:hover img {
     transform: scale(1.1);
 }
 
