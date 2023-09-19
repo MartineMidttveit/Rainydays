@@ -33,6 +33,7 @@ header {
     gap: 1.5rem;
     cursor: pointer;
     font-size: 1rem;
+    color: hsl(0, 0%, 95%);
 }
 
 .banner-item {
@@ -133,9 +134,20 @@ header {
     background-color: transparent;
 }
 
+#search-icon {
+    display: none;
+}
+
 /* MEDIA QUERIES MOBILE AND IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
+
+    .fa-cart-shopping,
+    #search-icon {
+        display: block;
+        color: #233F3F;
+        font-size: 1.1rem;
+    }
 
     .nav-header {
         display: none;

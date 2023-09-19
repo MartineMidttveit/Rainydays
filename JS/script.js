@@ -1,13 +1,16 @@
 const getPrevJackets = localStorage.getItem("jackets");
 let prevJackets = JSON.parse(getPrevJackets);
 
-const counter = document.querySelector(".count")
+const counters = document.querySelectorAll(".count")
 
 if (prevJackets) {
-    
-    if (prevJackets.length >= 1) {
-        counter.textContent = prevJackets.length
-    }
-    else{ counter.textContent = 0};
+    counters.forEach(counter => {
+        if (prevJackets.length > 1) {
+          const totalJackets = prevJackets.reduce((acc,cur) => acc + (cur.quantity), 0)
+          console.log(totalJackets)
+        counter.textContent = totalJackets;
+        }
+      
+        else{counter.textContent = 1};
+      });
 }
-else counter.textContent = 0;
