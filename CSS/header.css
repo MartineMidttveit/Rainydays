@@ -232,6 +232,9 @@ header {
         width: 70px;
     }
 
+    .shoppingcart .count {
+        display: flex;
+    }
 }
 
 /* MEDIA QUERIES MOBILE */
