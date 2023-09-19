@@ -6,7 +6,7 @@ const totalAndShipping = document.querySelector(".products-list-container")
 const checkoutBtn = document.querySelector(".goToPay")
 
 
-const count = document.querySelector(".count");
+const counters = document.querySelectorAll(".count");
 
 export default function updateCart() {
   const getItems = localStorage.getItem("jackets");
@@ -21,7 +21,10 @@ export default function updateCart() {
     if (total >= 250) shipping.textContent = "FREE";
     else shipping.textContent = "£ 9.99";
     
-   count.textContent = parsedItem.length;
+
+   const totalJackets = parsedItem.reduce((acc,cur) => acc + (cur.quantity), 0)
+   counters.forEach(counter => counter.textContent = totalJackets)
+      
   }
 
 

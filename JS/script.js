@@ -11,6 +11,6 @@ if (prevJackets) {
         counter.textContent = totalJackets;
         }
       
-        else{counter.textContent = 1};
+        else{counter.textContent = 0};
       });
 }
