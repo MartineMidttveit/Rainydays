@@ -138,7 +138,7 @@
     padding: 0% 7%;
 }
 
-@media only screen and (min-width: 0) and (max-width: 960px) {
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
     .product-grid {
       display: flex;
       flex-direction: column;
@@ -185,9 +185,29 @@
     .totalPrice p {
         margin: 5px;
     }
+
+    .signUp,
+    .signUpNewsletter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signUpImg,
+    .signUpImg img {
+        width: 100%;
+        order: 2;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .signUpNewsletter {
+        flex-direction: column;
+        justify-content: center;
+        padding: 8% 7%;
+    }
 }
 
-@media only screen and (min-width: 0) and (max-width: 600px) {
+@media only screen and (min-width: 0) and (max-width: 767px) {
     .products-list-container .product-grid {
         width: 100%;
     }

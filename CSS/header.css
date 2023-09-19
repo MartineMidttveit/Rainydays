@@ -195,6 +195,10 @@ header {
     .banner-icons {
         display: none;
     }
+
+    #shoppingcart {
+        display: none;
+    }
 }
 
 /* MEDIA QUERIES MOBILE */
@@ -230,10 +234,6 @@ header {
         height: 45%;
     }
 
-    #shoppingcart {
-        display: none;
-    }
-
     .hamburger-navigation {
         display: flex;
         align-items: center;
@@ -260,10 +260,31 @@ header {
     }
 
     .search-bar {
-        padding-right: 4.5rem;
+        display: none;
     }
 
     #search {
-        right: 5rem;
+        position: unset;
+        font-size: 1.2rem;
+    }
+
+    #logo {
+        height: 55%;
+    }
+
+    .hamburger-navigation {
+        display: flex;
+        align-items: center;
+        gap: 1.9rem;
+    }
+
+    .fa-magnifying-glass,
+    .fa-cart-shopping {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    .count {
+        right: 14%;
     }
 }
