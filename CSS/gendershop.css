@@ -232,15 +232,6 @@ ul li:hover {
         flex-direction: column;
     }
 
-    .hero-text {
-        padding: 10%;
-        margin-top: 5%;
-    }
-
-    .sort-by {
-        display: none;
-    }
-
     .hero-section img {
         width: 100%;
     }
@@ -295,14 +286,6 @@ ul li:hover {
         padding: 0% 10% 5%;
     }
 
-    .hero-text {
-        padding-top: 24px;
-    }
-
-    .hero-text p {
-        padding-right: 24px;
-    }
-
     .product-list .product {
         min-height: 420px;
     }
@@ -322,9 +305,31 @@ ul li:hover {
     .filter-mobile-button {
         padding-right: 10%;
     }
+
+    .sort-by .navigation {
+        display: none;
+    }
+
+    .sort-by {
+        display: flex;
+        justify-content: end;
+    }
+
+    .hero-text {
+        padding: 6% 10% 4%;
+        margin-top: 5%;
+    }
+
+    .shop {
+        top: 65px;
+    }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .hero-text {
+        padding: 10%;
+        margin-top: 5%;
+    }
 
     .filter {
         padding-left: 15%;
@@ -334,5 +339,9 @@ ul li:hover {
 
     .filter > .filter-1 {
         padding-top: 4%;
+    }
+
+    .sort-by {
+        display: none;
     }
 }
