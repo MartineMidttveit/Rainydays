@@ -129,17 +129,44 @@
     .contact-forms .big-title {
       line-height: 28px;
     }
+
+    .contact-details {
+      padding: 8% 10%;
+    }
+
+    .faq {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-box {
+      padding-left: 3%;
+    }
   }
   
   @media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .contact-section img {
+      height: 570px;
+    }
+
     .contact-forms {
-      width: 100%;
+      width: 90%;
       padding: 0 24px;
       max-width: 450px;
     }
+
+    .contact-details {
+      padding: 15% 10%;
+    }
+
+    .contact-details .medium-title,
+    .bottom .medium-title {
+      padding-bottom: 7%;
+      font-size: 1rem;
+    }
   
     .faq {
-      grid-template-columns: 2fr;
+      grid-template-columns: 1fr;
     }
   
     .faq-box {
@@ -147,11 +174,27 @@
     }
   
     .contact-content .container {
-      grid-template-columns: 2fr;
+      grid-template-columns: 1fr;
     } 
+
+    details {
+      font-size: .8rem;
+    }
+
+    .bottom {
+      padding: 15% 10% 10%;
+    }
+
+    .underline {
+      font-size: .9rem;
+    }
+
+    .containers {
+      padding: 4% 0% 5%;
+    }
   }
   
-  @media only screen and (min-width: 0px) and (max-width: 1300px) {
+  @media only screen and (min-width: 0px) and (max-width: 1180px) {
     .contact-content {
       flex-direction: column;
     }
@@ -162,5 +205,17 @@
   
     .contact-content .containers {
       height: 100%;
+    }
+
+    .faq {
+      grid-template-columns: 1fr;
+    }
+
+    .bottom {
+      padding: 8% 10% 10%;
+    }
+
+    .bottom .medium-title {
+      padding-bottom: 4%;
     }
   }
