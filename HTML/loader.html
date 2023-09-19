@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/CSS/loader.css">
 
     <title>RainyDays | Home</title>
+
+    <script defer src="/JS/header.js"></script>
   </head>
 <body>
 
@@ -25,6 +27,7 @@
 
 <div class="banner">
     <p class="banner-text"></p>
+    <p>FAVORITES</p>
 </div>
 
 <header>
@@ -33,6 +36,12 @@
     </figure>
 
     <div class="hamburger-navigation">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <a class="nav-item" href="/HTML/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="count"></span>
+        </a>
         <div class="hamburger-menu">
             <span></span>
             <span></span>
@@ -48,15 +57,13 @@
             <a class="nav-item" href="/HTML/shop.html">SHOP</a>
             <a class="nav-item" href="/HTML/about.html">ABOUT</a>
             <a class="nav-item" href="/HTML/contact.html">CONTACT</a>
-            <a class="nav-item" href="/HTML/cart.html">
+            <a class="nav-item" href="/HTML/cart.html" id="shoppingcart">
                 CART
-                <span id="count"></span>
+                <span class="count"></span>
             </a>
         </nav>
     </div>
 </header>
-
-<script src="/JS/header.js"></script>
 
 <main>
 

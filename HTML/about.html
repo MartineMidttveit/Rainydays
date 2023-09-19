@@ -35,28 +35,70 @@
     </div>
 </div>
     
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Got a question? Please contact us. We're available through phone, email and our contact form!">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+
+    <title>RainyDays | Contact</title>
+    <script defer src="/JS/header.js"></script>
+    <script defer type="module" src="/JS/script.js"></script>
+  </head>
+<body>
+
+<!--HEADER-->
+
+<div class="banner">
+    <p class="banner-text"></p>
+
+    <div class="banner-icons">
+        <i class="fa-solid fa-user"></i>
+        <p>FAVORITES</p>
+    </div>
+</div>
+    
 <header>
     <figure class="logo-container">
         <a href="/index.html"><img src="/IMG/logo.png" alt="" id="logo"></a>
     </figure>
-    
+
     <div class="hamburger-navigation">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <a class="nav-item" href="/HTML/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="count"></span>
+        </a>
         <div class="hamburger-menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
-    
+
         <div class="search-bar">
             <input type="text" name="searchbar">
             <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-    
+
         <nav class="nav-header">
             <a class="nav-item" href="/HTML/shop.html">SHOP</a>
             <a class="nav-item" href="/HTML/about.html">ABOUT</a>
             <a class="nav-item" href="/HTML/contact.html">CONTACT</a>
-            <a class="nav-item" href="/HTML/cart.html">
+            <a class="nav-item" href="/HTML/cart.html" id="shoppingcart">
                 CART
                 <span class="count"></span>
             </a>

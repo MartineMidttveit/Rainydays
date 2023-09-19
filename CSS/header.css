@@ -89,10 +89,8 @@ header {
     align-items: center;
 }
 
-#shoppingcart {
-    height: 21px;
-    width: 21px;
-    position: relative;
+.fa-cart-shopping {
+    display: none;
 }
 
 .count {
@@ -215,12 +213,8 @@ header {
         gap: 2.5rem;
     }
 
-    .search-bar input {
-        display: none;
-    }
-
     .search-bar {
-        padding-right: 1.1rem;
+        display: none;
     }
 
     #search {
@@ -234,6 +228,26 @@ header {
 
     #logo {
         height: 45%;
+    }
+
+    #shoppingcart {
+        display: none;
+    }
+
+    .hamburger-navigation {
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .fa-magnifying-glass,
+    .fa-cart-shopping {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .count {
+        right: 16%;
     }
 }
 
