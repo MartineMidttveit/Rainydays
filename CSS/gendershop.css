@@ -205,28 +205,15 @@ ul li:hover {
 }
 
 .filter .actions {
-    padding: 0 24px;
+    padding: 20px 24px 0px;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    gap: 24px;
+    font-size: 1.1rem;
 }
 
-.filter .actions .filter-button {
-    border: 2px solid #ccc;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 6px 16px;
-    margin-top: 24px;
-    transition: background-color 0.1s ease-in;
-}
-
-.filter .actions .filter-button:active {
-    background-color: #bbb4;
-}
-
-.filter-mobile-button button {
+#filter {
     background-color: white;
     display: flex;
     gap: 10px;
@@ -240,13 +227,18 @@ ul li:hover {
     transition: transform .3s ease-in-out;
 }
 
-@media only screen and (min-width: 0) and (max-width: 768px) {
+@media only screen and (min-width: 0) and (max-width: 1180px) {
     .hero-section {
         flex-direction: column;
     }
 
+    .hero-text {
+        padding: 10%;
+        margin-top: 5%;
+    }
+
     .sort-by {
-        height: 50px;
+        display: none;
     }
 
     .hero-section img {
@@ -261,13 +253,9 @@ ul li:hover {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .sort-by .navigation {
-        display: none;
-    }
-
     .shop {
-        top: 50px;
         flex-direction: column;
+        padding-bottom: 10%;
     }
 
     .desktop-hidden {
@@ -287,44 +275,24 @@ ul li:hover {
     .filter-mobile-button {
         justify-content: end;
         align-items: center;
-        padding: 24px 24px 0;
-    }
-    
-    .filter-mobile-button i {
-        font-size: 1rem;
+        padding-right: 5%;
+        margin-top: 20px;
     }
 
     .filter-mobile-hidden {
         left: -100%;
     }
 
-    .filter .actions .filter-button {
-        margin-top: 0;
-    }
-
     .mobile-hidden {
         display: none;
     }
-}
-
-@media only screen and (min-width: 0) and (max-width: 1080px) {
+    
     .product-list {
         position: relative;
-        padding: 24px;
-        padding-bottom: 200px;
-        top: 70px;
+        top: 20px;
         width: 100%;
         overflow: auto;
-    }
-
-    .filter {
-        padding-left: 40px;
-        min-width: 240px;
-    }
-
-    .sort-by {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 0% 10% 5%;
     }
 
     .hero-text {
@@ -334,13 +302,33 @@ ul li:hover {
     .hero-text p {
         padding-right: 24px;
     }
+
     .product-list .product {
         min-height: 420px;
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
     .product-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter {
+        padding-left: 10%;
+        min-width: 50%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .filter {
+        padding-left: 15%;
+        min-width: 100%;
+        height: 100%;
+    }
+
+    .filter > .filter-1 {
+        padding-top: 4%;
     }
 }
