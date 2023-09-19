@@ -204,6 +204,10 @@ ul li:hover {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
 }
 
+.filter {
+    padding-left: 5%;
+}
+
 .filter .actions {
     padding: 20px 24px 0px;
     display: flex;
@@ -214,7 +218,8 @@ ul li:hover {
 }
 
 #filter {
-    background-color: white;
+    background-color: #233F3F;
+    color: white;
     display: flex;
     gap: 10px;
     font-size: 1rem;
@@ -316,8 +321,7 @@ ul li:hover {
     }
 
     .hero-text {
-        padding: 6% 10% 4%;
-        margin-top: 5%;
+        padding: 6% 10% 3%;
     }
 
     .shop {
@@ -328,7 +332,6 @@ ul li:hover {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .hero-text {
         padding: 10%;
-        margin-top: 5%;
     }
 
     .filter {
@@ -339,6 +342,10 @@ ul li:hover {
 
     .filter > .filter-1 {
         padding-top: 4%;
+    }
+
+    .filter .actions {
+        padding-right: 15%;
     }
 
     .sort-by {
