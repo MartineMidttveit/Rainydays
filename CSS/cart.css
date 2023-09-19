@@ -1,4 +1,4 @@
-.shoppingcart {
+.shoppingcart-cart {
     display: flex;
     flex-direction: column;
     background-color: #DEE2E2;
@@ -87,6 +87,10 @@
     align-items: center;
 }
 
+.mobile-version {
+    display: none;
+}
+
 /* QUANTITY */
 
 .quantity-container {
@@ -139,118 +143,28 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
+    
     .product-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 1rem;
-      padding-left: 0;
-    }
-  
-    .product-details {
-      text-align: center;
-    }
-  
-    .priceShipping,
-    .totalPrice {
-      text-align: center;
+        padding-left: 0%;
     }
 
-    .product-grid.table-titles {
+    .product-grid h2 {
         display: none;
     }
-
-    .products-list-container {
-        display: flex;
-        flex-wrap: wrap;
+    
+    .clickedProducts .product-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
-    .products-list-container .product-grid {
-        width: 50%;
-    }
-
-    .totalPrice {
-        padding-top: 32px;
-    }
-
-    .priceShipping,
-    .totalPrice {
-        width: 100%;
-        display: flex;
-        gap: 10px;
-    }
-
-    .priceShipping p,
-    .totalPrice p {
-        margin: 5px;
-    }
-
-    .signUp,
-    .signUpNewsletter {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .signUpImg,
-    .signUpImg img {
-        width: 100%;
-        order: 2;
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .signUpNewsletter {
-        flex-direction: column;
-        justify-content: center;
-        padding: 8% 7%;
+    .image-container {
+        grid-column: 1/2;
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .products-list-container .product-grid {
-        width: 100%;
-    }
 
-    .product-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .product-img {
-        width: 100%; 
-    }
-
-    .product-name,
-    .product-size,
-    .product-quantity,
-    .product-price {
-        width: 50%;
-        text-align: center;
-    }
-
-    .buttons {
-        flex-direction: column;
-        justify-content: center;
-        align-items: self-end;
-        padding: 16px 0;
-    }
-
-    .buttons .medium-title,
-    .buttons figure {
-        width: fit-content;
-    }
-
-    #arrow-right {
-        margin-bottom: 8px;
-    }
-
-    .priceShipping,
-    .totalPrice {
-        padding-right: 0;
-    }
+    
 }
 
 @media only screen and (min-width: 1181px) and (max-width: 1440px) {
