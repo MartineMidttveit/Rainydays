@@ -1,11 +1,13 @@
-// hente det inn i .product-container 
 import removeNames from "../removeNames.js";
 
-export default function jacket() {
+export default function displayJacket(jacket, box) {
     const jacketName = removeNames(jacket); 
 
     const container = document.createElement("section");
     container.classList.add("product-container");
+
+    const jacketImages = document.createElement("div");
+    jacketImages.classList.add("product-images");
 
     const jacketImg = document.createElement("figure");
     jacketImg.classList.add("prod-images"); 
@@ -23,11 +25,12 @@ export default function jacket() {
 
     const logo = document.createElement("img");
     logo.setAttribute("id", "small-logo");
+    logo.src = `/IMG/logo.png`;
     logo.alt = "Rainydays logo displaying mountains above the name";
 
     const title = document.createElement("h1");
     title.classList.add("medium-title");
-    title.textContent = jacket.title;
+    title.textContent = jacketName;
 
     const rating = document.createElement("div");
     rating.classList.add("rating");
@@ -53,7 +56,7 @@ export default function jacket() {
     starIcon5.classList.add("fa-star");
 
     const ratingText = document.createElement("p");
-    ratingText.textContent = "Based on 2 reviews";
+    ratingText.textContent = "Based on 2 reviews.";
 
     const jacketDescription = document.createElement("p");
     jacketDescription.textContent = jacket.description + " Crafted with meticulous attention to detail, this jacket seamlessly fuses form and function, ensuring you stay dry without compromising on your fashion-forward sensibilities.";
@@ -62,7 +65,7 @@ export default function jacket() {
     colors.classList.add("colors");
 
     const selectColor = document.createElement("p");
-    selectColor.textContent = "Select a color";
+    selectColor.textContent = "Select a color:";
 
     const circles = document.createElement("div");
     circles.classList.add("circles");
@@ -87,38 +90,42 @@ export default function jacket() {
     
     const sizeBtn1 = document.createElement("button");
     sizeBtn1.classList.add("sizeBtn");
-    sizeBtn1.textContent = jacket.size[0];
+    console.log(jacket)
+    sizeBtn1.textContent = jacket.sizes[0];
 
     const sizeBtn2 = document.createElement("button");
     sizeBtn2.classList.add("sizeBtn");
-    sizeBtn2.textContent = jacket.size[1];
+    sizeBtn2.textContent = jacket.sizes[1];
 
     const sizeBtn3 = document.createElement("button");
     sizeBtn3.classList.add("sizeBtn");
-    sizeBtn3.textContent = jacket.size[2];
+    sizeBtn3.textContent = jacket.sizes[2];
 
     const sizeBtn4 = document.createElement("button");
     sizeBtn4.classList.add("sizeBtn");
-    sizeBtn4.textContent = jacket.size[3];
+    sizeBtn4.textContent = jacket.sizes[3];
 
     const sizeBtn5 = document.createElement("button");
     sizeBtn5.classList.add("sizeBtn");
-    sizeBtn5.textContent = jacket.size[4];
+    sizeBtn5.textContent = jacket.sizes[4];
 
     const sizeBtn6 = document.createElement("button");
     sizeBtn6.classList.add("sizeBtn");
-    sizeBtn6.textContent = jacket.size[5];
+    sizeBtn6.textContent = jacket.sizes[5];
 
     const buyNow = document.createElement("button");
-    buyNow.classList.add("dark-green-btn buy-now");
+    buyNow.classList.add("dark-green-btn");
+    buyNow.classList.add("buy-now");
     buyNow.textContent = "BUY NOW";
 
-    container.append(jacketImg, productInfo);
+    box.append(container);
+    container.append(jacketImages, productInfo);
+    jacketImages.append(jacketImg);
     jacketImg.append(productImage);
-    productInfo.append(prodInfo, colors, sizes, buyNow, jacketDescription, chooseSize, buyNow);
+    productInfo.append(prodInfo, jacketDescription, colors, chooseSize, sizes);
     prodInfo.append(logo, title, rating);
     rating.append(starIcon1, starIcon2, starIcon3, starIcon4, starIcon5, ratingText);
-    colors.append(selectColor, circle1, circle2, circle3);
+    colors.append(selectColor, circles);
+    circles.append(circle1, circle2, circle3);
     sizes.append(sizeBtn1, sizeBtn2, sizeBtn3, sizeBtn4, sizeBtn5, sizeBtn6);
 }
-

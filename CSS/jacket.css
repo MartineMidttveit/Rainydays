@@ -28,8 +28,8 @@
     transition: transform .6s ease-in-out;
 }
 
-.prodImg:hover img {
-    transform: scale(1.1);
+.prodImg:hover {
+    transform: scale(1.2);
 }
 
 .product-info {
@@ -64,7 +64,6 @@
 
 .colors {
     height: fit-content;
-    flex-direction: column;
 }
 
 .circles {
