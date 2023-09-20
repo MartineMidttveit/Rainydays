@@ -73,14 +73,20 @@ export default function displayJacket(jacket, box) {
     const circle1 = document.createElement("span");
     circle1.classList.add("circle");
     circle1.setAttribute("id", "color-1");
+    circle1.dataset.color = "Forrest Green"
 
     const circle2 = document.createElement("span");
     circle2.classList.add("circle");
     circle2.setAttribute("id", "color-2");
+    circle2.dataset.color = "Bright Red"
 
     const circle3 = document.createElement("span");
     circle3.classList.add("circle");
     circle3.setAttribute("id", "color-3");
+    circle3.dataset.color = "Midnight Black";
+
+    const colorText = document.createElement("span");
+    colorText.classList.add("colorText");
 
     const chooseSize = document.createElement("p");
     chooseSize.textContent = "Choose a size: "; 
@@ -126,6 +132,6 @@ export default function displayJacket(jacket, box) {
     prodInfo.append(logo, title, rating);
     rating.append(starIcon1, starIcon2, starIcon3, starIcon4, starIcon5, ratingText);
     colors.append(selectColor, circles);
-    circles.append(circle1, circle2, circle3);
+    circles.append(circle1, circle2, circle3, colorText);
     sizes.append(sizeBtn1, sizeBtn2, sizeBtn3, sizeBtn4, sizeBtn5, sizeBtn6);
 }

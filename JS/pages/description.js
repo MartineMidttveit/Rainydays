@@ -19,5 +19,19 @@ if (jacket.errors) {
     createError(jacket, productWrapper);
 } else {
    displayJacket(jacket, productWrapper);
-}
+   const sizeBtns = document.querySelectorAll(".sizeBtn")
+   sizeBtns.forEach(btn => btn.addEventListener("click", () => {
 
+    sizeBtns.forEach(btn => btn.style.backgroundColor = "unset")
+    btn.style.backgroundColor = "#BED8D5";
+
+}))
+
+const colours = document.querySelectorAll(".circle")
+const colorText = document.querySelector(".colorText")
+colours.forEach(color => color.addEventListener("click", (e) => {
+    colorText.textContent = color.dataset.color
+
+  
+}))
+}
