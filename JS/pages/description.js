@@ -1,6 +1,8 @@
 import fetchJackets from "../fetchJackets.js"
 import displayJacket from "../createHTML/displayJacket.js";
+import createError from "../createHTML/createError.js";
 
+const productWrapper = document.querySelector(".product-wrapper");
 
 const url =  "https://api.noroff.dev/api/v1/rainy-days/";
 
@@ -8,14 +10,10 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-
-
 const jacket = await fetchJackets(url, id)
 
-console.log(jacket)
-
-
-
-const productWrapper = document.querySelector(".product-wrapper");
-
-displayJacket(jacket, productWrapper);
+if (jacket.errors) {
+    createError(jacket, productWrapper);
+} else {
+   displayJacket(jacket, productWrapper);
+}
