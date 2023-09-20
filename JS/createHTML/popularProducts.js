@@ -10,6 +10,7 @@ export default function popularProducts(jacket, productList) {
   icon.classList.add("fa-regular");
   icon.classList.add("fa-heart");
   icon.setAttribute("id", "favorite");
+  icon.dataset.id = jacket.id;
 
   const aElement = document.createElement("a");
   aElement.href = `/HTML/jacket.html?id=${jacket.id}`;

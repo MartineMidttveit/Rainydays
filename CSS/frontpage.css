@@ -289,6 +289,22 @@ input {
   padding: 0% 10%;
 }
 
+#bigTitle {
+  padding-bottom: 2%;
+}
+
+#discountCode {
+  background-color: #4B6D6D;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1%;
+  width: 25%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
 /* MEDIA QUERIES MOBILE AND IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {

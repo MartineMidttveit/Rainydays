@@ -3,6 +3,7 @@ import favorite from "../favorite.js";
 import popularProducts from "../createHTML/popularProducts.js";
 import sectionFour from "../createHTML/sectionFour.js";
 import createError from "../createHTML/createError.js";
+import subscribe from "../details/subscribe.js"
 
 const productList = document.querySelector(".product-list");
 const newProduct = document.querySelector(".sectionFour");
@@ -35,11 +36,14 @@ allNumbers.forEach(number => {
     popularProducts(allJackets[number], productList);
 })
 
-favorite();
+
 sectionFour(allJackets[10], newProduct);
+favorite();
 }
 
 
 
 
+
+subscribe()
 

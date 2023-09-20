@@ -2,6 +2,7 @@ import fetchJackets from "../fetchJackets.js"
 import popularProducts from "../createHTML/popularProducts.js"
 import createError from "../createHTML/createError.js";
 import slideshow from "../details/slideshow.js"
+import favorite from "../favorite.js"
 
 const container = document.querySelector(".product-list")
 
@@ -40,4 +41,6 @@ if (jackets.errors) {
     }
 });
 }
+
+favorite();
 
