@@ -85,7 +85,7 @@
 	cursor: pointer;
 }
 
-p {
+.error-message {
 	margin: 0;
 }
 

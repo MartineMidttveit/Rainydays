@@ -11,6 +11,7 @@ export default function createError(error, errorBox) {
 
     const errorMessage = document.createElement("p");
     errorMessage.textContent = "Could not load products due to "; 
+    errorMessage.classList.add("error-message");
 
     const errorSpan = document.createElement("span");
     errorSpan.classList.add("bold");
