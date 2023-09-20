@@ -5,6 +5,10 @@ import createError from "../createHTML/createError.js";
 const container = document.querySelector(".product-list");
 const womensJackets = await fetchJackets("https://api.noroff.dev/api/v1/rainy-days");
 
+const loadingIndicator = document.querySelector(".loading-indicator");
+
+loadingIndicator.remove();
+
 if (womensJackets.errors) {
     createError(womensJackets, container)
 } else {

@@ -2,6 +2,7 @@
     padding: 4% 10%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #DEE2E2;
 }
 

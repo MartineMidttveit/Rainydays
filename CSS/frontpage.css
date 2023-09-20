@@ -475,3 +475,7 @@ input {
     gap: 1rem;
   }
 }
+
+.loading-indicator .wrapper {
+  top: 40%;
+}

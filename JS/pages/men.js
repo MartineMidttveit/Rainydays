@@ -4,6 +4,9 @@ import createError from "../createHTML/createError.js";
 
 const container = document.querySelector(".product-list");
 const jackets = await fetchJackets("https://api.noroff.dev/api/v1/rainy-days");
+const loadingIndicator = document.querySelector(".loading-indicator");
+
+loadingIndicator.remove();
 
 if (jackets.errors) {
     createError(jackets, container);

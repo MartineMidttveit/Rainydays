@@ -7,10 +7,12 @@ import createError from "../createHTML/createError.js";
 const productList = document.querySelector(".product-list");
 const newProduct = document.querySelector(".sectionFour");
 const sectionTree = document.querySelector(".sectionTree");
-
+const loadingIndicators = document.querySelectorAll(".loading-indicator");
 
 const url = "https://api.noroff.dev/api/v1/rainy-days";
 const allJackets = await fetchJackets(url);
+loadingIndicators.forEach(loadingIndicator => loadingIndicator.remove())
+
 
 if (allJackets.errors) {
     createError(allJackets, newProduct)

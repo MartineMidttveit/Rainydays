@@ -4,9 +4,12 @@ import updateCart from "../cart/updateCart.js";
 import createError from "../createHTML/createError.js";
 
 const cartItems = document.querySelector(".clickedProducts");
+const loadingIndicator = document.querySelector(".loading-indicator");
 
 const url = "https://api.noroff.dev/api/v1/rainy-days";
 const allJackets = await fetchJackets(url);
+
+loadingIndicator.remove()
 
 if (allJackets.errors) {
   createError(allJackets, cartItems);
