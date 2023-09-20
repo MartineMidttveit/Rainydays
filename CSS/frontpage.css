@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 .sectionOne {
     max-width: 100%;
     background-image: url(/IMG/header-img.png);
