@@ -20,3 +20,4 @@ if (jacket.errors) {
 } else {
    displayJacket(jacket, productWrapper);
 }
+
