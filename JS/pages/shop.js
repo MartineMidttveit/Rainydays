@@ -1,6 +1,7 @@
 import fetchJackets from "../fetchJackets.js"
 import popularProducts from "../createHTML/popularProducts.js"
 import createError from "../createHTML/createError.js";
+import slideshow from "../details/slideshow.js"
 
 const container = document.querySelector(".product-list")
 
@@ -9,7 +10,7 @@ const jackets = await fetchJackets("https://api.noroff.dev/api/v1/rainy-days")
 const loadingIndicator = document.querySelector(".loading-indicator");
 
 loadingIndicator.remove();
-
+slideshow()
 if (jackets.errors) {
     createError(jackets, container);
 } else {
