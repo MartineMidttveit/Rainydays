@@ -47,12 +47,12 @@ figure {
     margin: 0;
 }
 
-#arrow-right {
+.arrow-right {
     height: 15px;
     width: 47px;
 }
 
-.section-title:hover #arrow-right {
+.section-title:hover .arrow-right {
     transition: .5s;
     animation: animate 1s infinite;
 }
@@ -379,7 +379,7 @@ input {
     font-size: 1rem;
   }
 
-  #arrow-right {
+  .arrow-right {
     height: 8px;
     width: 25px;
   }
