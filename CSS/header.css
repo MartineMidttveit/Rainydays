@@ -160,6 +160,10 @@ header {
         font-size: 1.1rem;
     }
 
+    .shoppingcart-desktop {
+        display: none;
+    }
+
     .nav-header {
         display: none;
     }
@@ -171,7 +175,7 @@ header {
         width: 50%;
         right: 0;
         z-index: 5;
-        padding: 5% 0%;
+        padding: 10% 0%;
     }
 
     .nav-header {
