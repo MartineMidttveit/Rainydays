@@ -51,6 +51,11 @@
     transform: translateX(-50%);
 }
 
+#two {
+    background-color: #DEE2E2;
+    color: #233F3F;
+}
+
 #third {
     margin-right: 0;
     right: 0;
