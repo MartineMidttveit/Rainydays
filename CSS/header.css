@@ -267,12 +267,13 @@ header {
     }
 
     #logo {
-        height: 45%;
+        height: 50%;
     }
 
     .hamburger-navigation {
         display: flex;
         align-items: center;
+        margin-top: 3%;
     }
 
     .fa-magnifying-glass,
@@ -311,6 +312,7 @@ header {
         display: flex;
         align-items: center;
         gap: 1.9rem;
+        margin-top: .8%;
     }
 
     .fa-magnifying-glass,

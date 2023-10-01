@@ -124,7 +124,14 @@ export default function displayJacket(jacket, box) {
     buyNow.classList.add("buy-now");
     buyNow.textContent = "BUY NOW";
 
-    box.append(container);
+    const productInfoMobile = document.createElement("div");
+    productInfoMobile.classList.add("productInfoMobile");
+    productInfoMobile.append(jacketDescription, colors, chooseSize, sizes);
+
+    const jacketMobile = document.createElement("section");
+    jacketMobile.classList.add("jacketMobile");
+
+    box.append(container, jacketMobile);
     container.append(jacketImages, productInfo);
     jacketImages.append(jacketImg);
     jacketImg.append(productImage);
@@ -134,4 +141,12 @@ export default function displayJacket(jacket, box) {
     colors.append(selectColor, circles);
     circles.append(circle1, circle2, circle3, colorText);
     sizes.append(sizeBtn1, sizeBtn2, sizeBtn3, sizeBtn4, sizeBtn5, sizeBtn6);
+
+    jacketMobile.append(
+        prodInfo.cloneNode(true), 
+        jacketDescription.cloneNode(true), 
+        jacketImages.cloneNode(true), 
+        colors.cloneNode(true), 
+        chooseSize.cloneNode(true), 
+        sizes.cloneNode(true));
 }
