@@ -114,7 +114,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 40px;
     width: 40px;
     border-radius: 100%;
-    background-color: #7D9F9F;
+    background-color: #233F3F;
     display: flex;
     align-items: center;
     justify-content: center;
