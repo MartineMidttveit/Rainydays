@@ -268,11 +268,6 @@ ul li:hover {
         height: fit-content;
     }
 
-    .filter-mobile-button {
-        padding-right: 5%;
-        margin-top: 20px;
-    }
-
     .filter-mobile-hidden {
         left: -100%;
     }
@@ -292,6 +287,16 @@ ul li:hover {
     .product-list .product {
         min-height: 420px;
     }
+
+    .filter-mobile-button {
+        padding: 0;
+    }
+
+    .shop .wrapper {
+        display: flex;
+        align-items: start;
+        padding-left: 10%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
@@ -303,10 +308,6 @@ ul li:hover {
         padding-left: 10%;
         min-width: 50%;
         height: 100%;
-    }
-
-    .filter-mobile-button {
-        padding-right: 10%;
     }
 
     .sort-by .navigation {
@@ -324,6 +325,10 @@ ul li:hover {
 
     .shop {
         top: 65px;
+    }
+
+    .shop .wrapper {
+        padding: 6% 0% 3% 10%;
     }
 }
 
@@ -348,6 +353,10 @@ ul li:hover {
 
     .sort-by {
         display: none;
+    }
+
+    .shop .wrapper {
+        padding: 8% 0% 2% 10%;
     }
 }
 
