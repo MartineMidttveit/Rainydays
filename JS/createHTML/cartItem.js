@@ -97,12 +97,22 @@ export default function cartItem(jacket, container, numJackets) {
 
   productPrice.append(exactPrice);
 
+  const mobileVersion = document.createElement("div");
+  mobileVersion.classList.add("mobileVersion");
+
+  const textGridMobile = document.createElement("div");
+  textGridMobile.classList.add("textGridMobile");
+  textGridMobile.append(productName, productSize, quantity, productPrice);
+
+  mobileVersion.append(imgContainer, textGridMobile);
+
   productGrid.append(
-    imgContainer,
-    productName,
-    productSize,
-    quantity,
-    productPrice
+    imgContainer.cloneNode(true),
+    productName.cloneNode(true),
+    productSize.cloneNode(true),
+    quantity.cloneNode(true),
+    productPrice.cloneNode(true)
   );
-  container.append(productGrid);
+
+  container.append(mobileVersion, productGrid);
 }

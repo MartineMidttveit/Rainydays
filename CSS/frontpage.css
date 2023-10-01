@@ -348,6 +348,10 @@ input {
   .newsletter {
     width: 100%;
   }
+
+  #discountCode {
+    width: 40%;
+  }
 }
 
 /* MEDIA QUERIES MOBILE */
@@ -430,6 +434,11 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #discountCode {
+    width: 80%;
+    margin-top: 6%;
   }
 }
 
