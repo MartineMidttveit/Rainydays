@@ -232,7 +232,7 @@ ul li:hover {
     transition: transform .3s ease-in-out;
 }
 
-@media only screen and (min-width: 0) and (max-width: 1180px) {
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
     .hero-section {
         flex-direction: column;
     }
@@ -269,8 +269,6 @@ ul li:hover {
     }
 
     .filter-mobile-button {
-        justify-content: end;
-        align-items: center;
         padding-right: 5%;
         margin-top: 20px;
     }
