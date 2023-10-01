@@ -84,6 +84,7 @@
 
 <main>
 
+<!-- ORDER SUMMARY -->
     <section class="summary order-summary">
         <div class="rightSide">
             <div class="stages">
@@ -142,13 +143,17 @@
 
             <div class="coupons">
                 <form class="giftcard" aria-label="Write your giftcard-code here.">
-                    <label for="giftcard">Giftcard:</label>
-                    <input type="text">
+                    <label for="input">Giftcard:</label>
+                    <input type="text" class="input">
                 </form>
 
+                <!--<form action="/action_page.php">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>-->
+
                 <form class="coupon" aria-label="Write your coupon-code here.">
-                    <label for="coupon">Coupon code:</label>
-                    <input type="text">
+                    <label for="input">Coupon code:</label>
+                    <input type="text" class="input">
                 </form>
             </div>
         </div>
@@ -158,33 +163,33 @@
                 <h2 class="medium-title">SHIPPING DETAILS:</h2>
                 <form class="inputs">
                     <label for="fullName">Full name:</label>
-                    <input type="text" name="fullName">
+                    <input type="text" class="fullName">
                 </form>
     
                 <form class="inputs">
                     <label for="eMail">E-mail:</label>
-                    <input type="text" name="eMail">
+                    <input type="text" class="eMail">
                 </form>
     
                 <form class="inputs">
                     <label for="address1">Address 1:</label>
-                    <input type="text" name="address1">
+                    <input type="text" class="address1">
                 </form>
     
                 <form class="inputs">
                     <label for="address2">Address 2:</label>
-                    <input type="text" name="address2">
+                    <input type="text" class="address2">
                 </form>
     
                 <div class="inputs double double-order-summary">
                     <form class="city">
                         <label for="city">City:</label>
-                        <input type="text" name="city">
+                        <input type="text" class="city">
                     </form>
     
                 <form class="zip">
                     <label for="zip">ZIP:</label>
-                    <input type="number" name="zip">
+                    <input type="number" class="zip">
                 </form>
             </div>
         </div> 
