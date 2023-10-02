@@ -37,6 +37,5 @@ export default function addToCart(id, price) {
       counter.textContent = totalJackets;
     }
     else counter.textContent = 1;
- 
   })
 }

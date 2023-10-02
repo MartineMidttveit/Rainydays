@@ -122,6 +122,11 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.fa-minus,
+.fa-plus {
+    padding: 40%;
+}
+
 /* NEWSLETTER */
 
 .signUp,

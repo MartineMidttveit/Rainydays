@@ -2,8 +2,6 @@ import removeNames from "../removeNames.js";
 import changeQuantity from "../cart/changeQuantity.js";
 import updateCart from "../cart/updateCart.js";
 
-
-
 export default function cartItem(jacket, container, numJackets) {
   const jacketName = removeNames(jacket);
 
@@ -57,18 +55,9 @@ export default function cartItem(jacket, container, numJackets) {
   minusIcon.classList.add("fa-minus");
 
   minus.append(minusIcon);
-  minus.addEventListener("click", (e) => {
-    numJackets--;
-    amount.textContent = numJackets;
-
-    exactPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
-    if (numJackets <= 0) productGrid.remove();
-    changeQuantity(productGrid, numJackets);
-    updateCart();
-  });
-
   const amount = document.createElement("p");
   amount.textContent = numJackets;
+  amount.classList.add("qty-amount")
 
   const plus = document.createElement("button");
   plus.classList.add("quantityBtn");
@@ -77,14 +66,7 @@ export default function cartItem(jacket, container, numJackets) {
   plusIcon.classList.add("fa-solid");
   plusIcon.classList.add("fa-plus");
 
-  plus.addEventListener("click", (e) => {
-    numJackets++;
-    console.log(productGrid.price);
-    amount.textContent = numJackets;
-    exactPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
-    changeQuantity(productGrid, numJackets);
-    updateCart();
-  });
+
   plus.append(plusIcon);
 
   quantityContainer.append(minus, amount, plus);
@@ -94,6 +76,7 @@ export default function cartItem(jacket, container, numJackets) {
 
   const exactPrice = document.createElement("p");
   exactPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
+  exactPrice.classList.add("item-total-price")
 
   productPrice.append(exactPrice);
 
@@ -106,13 +89,68 @@ export default function cartItem(jacket, container, numJackets) {
 
   mobileVersion.append(imgContainer, textGridMobile);
 
+  const quantClone = quantity.cloneNode(true)
+
   productGrid.append(
     imgContainer.cloneNode(true),
     productName.cloneNode(true),
     productSize.cloneNode(true),
-    quantity.cloneNode(true),
+    quantClone,
     productPrice.cloneNode(true)
   );
 
   container.append(mobileVersion, productGrid);
+
+
+  // EVENT LISTENERS + / - quantity 
+
+ const clonedBtns = quantClone.querySelectorAll("button")
+
+const minusBtns = [clonedBtns[0], minus]
+const plusBtns = [clonedBtns[1], plus]
+minusBtns.forEach(minus => {
+
+ minus.addEventListener("click", (e) => {
+   numJackets--;
+
+   const curItem = e.target.parentElement.parentElement.parentElement.parentElement;
+
+   const curAmount = curItem.querySelector(".qty-amount")
+   const curTotalPrice = curItem.querySelector(".item-total-price")
+
+   curAmount.textContent = numJackets;
+
+   curTotalPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
+   if (numJackets <= 0) {
+     mobileVersion.remove();
+     productGrid.remove()};
+
+   changeQuantity(curItem, numJackets);
+    updateCart();
+ });
+})
+
+plusBtns.forEach(plus => {
+  console.log(plus.parentElement)
+  plus.addEventListener("click", (e) => {
+    numJackets++;
+
+    const curItem = e.target.parentElement.parentElement.parentElement.parentElement;
+
+    const curAmount = curItem.querySelector(".qty-amount")
+    const curTotalPrice = curItem.querySelector(".item-total-price")
+ 
+    curAmount.textContent = numJackets;
+ 
+ 
+    curTotalPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
+    if (numJackets <= 0) {
+      mobileVersion.remove();
+      productGrid.remove()};
+ 
+    changeQuantity(curItem, numJackets);
+     updateCart();
+  });
+})
+
 }
