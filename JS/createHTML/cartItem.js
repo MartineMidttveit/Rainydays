@@ -99,12 +99,12 @@ export default function cartItem(jacket, container, numJackets) {
     productPrice.cloneNode(true)
   );
 
-  container.append(mobileVersion, productGrid);
+container.append(mobileVersion, productGrid);
 
 
-  // EVENT LISTENERS + / - quantity 
+// EVENT LISTENERS + / - quantity 
 
- const clonedBtns = quantClone.querySelectorAll("button")
+const clonedBtns = quantClone.querySelectorAll("button")
 
 const minusBtns = [clonedBtns[0], minus]
 const plusBtns = [clonedBtns[1], plus]
@@ -125,7 +125,7 @@ minusBtns.forEach(minus => {
      mobileVersion.remove();
      productGrid.remove()};
 
-   changeQuantity(curItem, numJackets);
+   changeQuantity(productGrid, numJackets);
     updateCart();
  });
 })
@@ -142,13 +142,12 @@ plusBtns.forEach(plus => {
  
     curAmount.textContent = numJackets;
  
- 
     curTotalPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
     if (numJackets <= 0) {
       mobileVersion.remove();
       productGrid.remove()};
  
-    changeQuantity(curItem, numJackets);
+    changeQuantity(productGrid, numJackets);
      updateCart();
   });
 })
