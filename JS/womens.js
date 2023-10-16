@@ -44,7 +44,7 @@ async function getFemaleJackets() {
             });
         });
     } catch (error) {
-        throw new Error("Error fetching the game-data: " + error);
+        throw new Error("Error fetching the jacket-data: " + error);
     }
 }
 
