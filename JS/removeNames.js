@@ -1,3 +1,4 @@
 export default function removeNames(jacket) {
-   return jacket.title.replace("Rainy Days", "")
-}
+   return jacket.name.replace("Rainy Days", "");
+ }
+ 

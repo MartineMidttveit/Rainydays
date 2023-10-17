@@ -1,4 +1,4 @@
-const counters = document.querySelectorAll(".count")
+const counters = document.querySelectorAll(".count");
 
 export default function addToCart(id, price) {
   const getPrevJackets = localStorage.getItem("jackets");
@@ -29,13 +29,14 @@ export default function addToCart(id, price) {
     }
 
     localStorage.setItem("jackets", JSON.stringify(prevJackets));
-
   }
-  counters.forEach(counter => {
-    if(prevJackets) { 
-        const totalJackets = prevJackets.reduce((acc,cur) => acc + (cur.quantity), 0)
+  counters.forEach((counter) => {
+    if (prevJackets) {
+      const totalJackets = prevJackets.reduce(
+        (acc, cur) => acc + cur.quantity,
+        0
+      );
       counter.textContent = totalJackets;
-    }
-    else counter.textContent = 1;
-  })
+    } else counter.textContent = 1;
+  });
 }

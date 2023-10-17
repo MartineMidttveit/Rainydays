@@ -16,7 +16,7 @@ export default function popularProducts(jacket, productList) {
   aElement.href = `/HTML/jacket.html?id=${jacket.id}`;
 
   const jacketImage = document.createElement("img");
-  jacketImage.src = jacket.image;
+  jacketImage.src = jacket.images[0].src;
   jacketImage.alt = "Image of the listed jacket";
 
   const productInfo = document.createElement("div");
@@ -27,11 +27,15 @@ export default function popularProducts(jacket, productList) {
   h3.textContent = jacketName;
 
   const prices = document.createElement("div");
+
+  const salePrice = Number(jacket.prices.sale_price) / 100;
+  const origPrice = Number(jacket.prices.regular_price) / 100;
+
   prices.classList.add("price");
 
   const price = document.createElement("p");
   price.classList.add("discountedPrice");
-  price.textContent = "£ " + jacket.discountedPrice;
+  price.textContent = "£ " + salePrice;
   prices.append(price);
 
   const gender = document.createElement("p");
@@ -42,14 +46,17 @@ export default function popularProducts(jacket, productList) {
   btn.classList.add("dark-green-btn");
   btn.classList.add("buy-now");
   btn.textContent = "BUY NOW";
+
+  // ADD TO CART FUNCTION
   btn.addEventListener("click", (e) => {
     e.preventDefault();
 
     const curItem = e.target.parentElement.parentElement;
     const url = new URL(curItem);
     const currentID = url.searchParams.get("id");
-
-    addToCart(currentID, jacket.price);
+    const price = Number(jacket.prices.sale_price) / 100;
+    addToCart(currentID, price);
+    console.log(price);
   });
 
   container.append(icon, aElement);
@@ -58,7 +65,7 @@ export default function popularProducts(jacket, productList) {
 
   productList.appendChild(container);
 
-  if (jacket.onSale) {
+  if (jacket.on_sale) {
     const onSale = document.createElement("div");
     onSale.classList.add("onSale");
     const span = document.createElement("span");
@@ -69,7 +76,7 @@ export default function popularProducts(jacket, productList) {
 
     const originalPrice = document.createElement("p");
     originalPrice.classList.add("originalPrice");
-    originalPrice.textContent = "£ " + jacket.price;
+    originalPrice.textContent = "£ " + origPrice;
 
     prices.prepend(originalPrice);
   }

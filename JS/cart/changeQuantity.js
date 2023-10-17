@@ -4,7 +4,7 @@ export default function quantity(item, numItems) {
 
   const updatedList = parsedItem
     .map((pItem) => {
-      if (item.id === pItem.id) {
+      if (item.id == pItem.id) {
         if (numItems <= 0) {
           return null;
         } else {

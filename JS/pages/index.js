@@ -3,47 +3,45 @@ import favorite from "../favorite.js";
 import popularProducts from "../createHTML/popularProducts.js";
 import sectionFour from "../createHTML/sectionFour.js";
 import createError from "../createHTML/createError.js";
-import subscribe from "../details/subscribe.js"
+import subscribe from "../details/subscribe.js";
 
 const productList = document.querySelector(".product-list");
 const newProduct = document.querySelector(".sectionFour");
 const sectionTree = document.querySelector(".sectionTree");
 const loadingIndicators = document.querySelectorAll(".loading-indicator");
 
-const url = "https://api.noroff.dev/api/v1/rainy-days";
-const allJackets = await fetchJackets(url);
-loadingIndicators.forEach(loadingIndicator => loadingIndicator.remove())
+const allJackets = await fetchJackets();
 
+loadingIndicators.forEach((loadingIndicator) => loadingIndicator.remove());
 
-if (allJackets.errors) {
-    createError(allJackets, newProduct)
-    createError(allJackets, sectionTree)
+// createError(allJackets, newProduct);
+// createError(allJackets, sectionTree);
+
+const allNumbers = [];
+for (let index = 0; index <= 3; index++) {
+  const randomNumber = Math.floor(Math.random() * allJackets.length);
+
+  if (allNumbers.includes(randomNumber)) {
+    index--;
+  } else {
+    allNumbers.push(randomNumber);
+  }
 }
-else  {
-    const allNumbers = []
-    for (let index = 0; index <= 3; index++) {    
-    const randomNumber = Math.floor (Math.random() * allJackets.length)
+console.log(allJackets);
+allNumbers.forEach((number) => {
+  popularProducts(allJackets[number], productList);
+});
 
-    if(allNumbers.includes(randomNumber)) {
-        index --;
-    }
-    else { 
-        console.log(allJackets[randomNumber])
-        allNumbers.push(randomNumber)}
-}
+const trailBlaze = allJackets.filter(
+  (jacket) => jacket.name == "Trailblaze Jacket"
+);
 
-allNumbers.forEach(number => {
-    popularProducts(allJackets[number], productList);
-})
-
-
-sectionFour(allJackets[10], newProduct);
+sectionFour(trailBlaze[0], newProduct);
 favorite();
-}
 
+subscribe();
 
-
-
-
-subscribe()
-
+//
+// const consumerKey = "ck_3d78534cad4d9042bcd2d574e6322f7a5b1b10ba";
+// const consumerSecret = "cs_efbe898e78435935168e51ccb78e2471bd411be9";
+// const credentials = btoa(consumerKey + ":" + consumerSecret);

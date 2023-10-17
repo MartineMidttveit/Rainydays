@@ -15,8 +15,9 @@ export default function cartItem(jacket, container, numJackets) {
 
   const productImg = document.createElement("img");
   productImg.classList.add("product-images");
-  productImg.src = jacket.image;
-  productImg.alt = jacket.description;
+
+  productImg.src = jacket.images[0].src;
+  // productImg.alt = jacket.description;
 
   imgContainer.append(productImg);
 
@@ -57,7 +58,7 @@ export default function cartItem(jacket, container, numJackets) {
   minus.append(minusIcon);
   const amount = document.createElement("p");
   amount.textContent = numJackets;
-  amount.classList.add("qty-amount")
+  amount.classList.add("qty-amount");
 
   const plus = document.createElement("button");
   plus.classList.add("quantityBtn");
@@ -65,7 +66,6 @@ export default function cartItem(jacket, container, numJackets) {
   const plusIcon = document.createElement("i");
   plusIcon.classList.add("fa-solid");
   plusIcon.classList.add("fa-plus");
-
 
   plus.append(plusIcon);
 
@@ -75,8 +75,11 @@ export default function cartItem(jacket, container, numJackets) {
   productPrice.classList.add("product-price");
 
   const exactPrice = document.createElement("p");
-  exactPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
-  exactPrice.classList.add("item-total-price")
+
+  const price = Number(jacket.prices.sale_price) / 100;
+
+  exactPrice.textContent = "£ " + (price * numJackets).toFixed(2);
+  exactPrice.classList.add("item-total-price");
 
   productPrice.append(exactPrice);
 
@@ -89,7 +92,7 @@ export default function cartItem(jacket, container, numJackets) {
 
   mobileVersion.append(imgContainer, textGridMobile);
 
-  const quantClone = quantity.cloneNode(true)
+  const quantClone = quantity.cloneNode(true);
 
   productGrid.append(
     imgContainer.cloneNode(true),
@@ -99,57 +102,60 @@ export default function cartItem(jacket, container, numJackets) {
     productPrice.cloneNode(true)
   );
 
-container.append(mobileVersion, productGrid);
+  container.append(mobileVersion, productGrid);
 
+  // EVENT LISTENERS + / - quantity
 
-// EVENT LISTENERS + / - quantity 
+  const clonedBtns = quantClone.querySelectorAll("button");
 
-const clonedBtns = quantClone.querySelectorAll("button")
+  const minusBtns = [clonedBtns[0], minus];
+  const plusBtns = [clonedBtns[1], plus];
+  minusBtns.forEach((minus) => {
+    minus.addEventListener("click", (e) => {
+      numJackets--;
 
-const minusBtns = [clonedBtns[0], minus]
-const plusBtns = [clonedBtns[1], plus]
-minusBtns.forEach(minus => {
+      const curItem =
+        e.target.parentElement.parentElement.parentElement.parentElement;
 
- minus.addEventListener("click", (e) => {
-   numJackets--;
+      const curAmount = curItem.querySelector(".qty-amount");
+      const curTotalPrice = curItem.querySelector(".item-total-price");
 
-   const curItem = e.target.parentElement.parentElement.parentElement.parentElement;
+      curAmount.textContent = numJackets;
+      const price = Number(jacket.prices.sale_price) / 100;
+      curTotalPrice.textContent = "£ " + (price * numJackets).toFixed(2);
+      if (numJackets <= 0) {
+        mobileVersion.remove();
+        productGrid.remove();
+      }
 
-   const curAmount = curItem.querySelector(".qty-amount")
-   const curTotalPrice = curItem.querySelector(".item-total-price")
-
-   curAmount.textContent = numJackets;
-
-   curTotalPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
-   if (numJackets <= 0) {
-     mobileVersion.remove();
-     productGrid.remove()};
-
-   changeQuantity(productGrid, numJackets);
-    updateCart();
- });
-})
-
-plusBtns.forEach(plus => {
-  console.log(plus.parentElement)
-  plus.addEventListener("click", (e) => {
-    numJackets++;
-
-    const curItem = e.target.parentElement.parentElement.parentElement.parentElement;
-
-    const curAmount = curItem.querySelector(".qty-amount")
-    const curTotalPrice = curItem.querySelector(".item-total-price")
- 
-    curAmount.textContent = numJackets;
- 
-    curTotalPrice.textContent = "£ " + (jacket.price * numJackets).toFixed(2);
-    if (numJackets <= 0) {
-      mobileVersion.remove();
-      productGrid.remove()};
- 
-    changeQuantity(productGrid, numJackets);
-     updateCart();
+      changeQuantity(productGrid, numJackets);
+      updateCart();
+    });
   });
-})
 
+  plusBtns.forEach((plus) => {
+    console.log(plus.parentElement);
+    plus.addEventListener("click", (e) => {
+      numJackets++;
+
+      const curItem =
+        e.target.parentElement.parentElement.parentElement.parentElement;
+
+      const curAmount = curItem.querySelector(".qty-amount");
+      const curTotalPrice = curItem.querySelector(".item-total-price");
+
+      curAmount.textContent = numJackets;
+
+      const price = Number(jacket.prices.sale_price) / 100;
+
+      curTotalPrice.textContent = "£ " + (price * numJackets).toFixed(2);
+      if (numJackets <= 0) {
+        mobileVersion.remove();
+        productGrid.remove();
+      }
+
+      changeQuantity(productGrid, numJackets);
+      updateCart();
+    });
+  });
 }

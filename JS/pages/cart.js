@@ -6,10 +6,9 @@ import createError from "../createHTML/createError.js";
 const cartItems = document.querySelector(".clickedProducts");
 const loadingIndicator = document.querySelector(".loading-indicator");
 
-const url = "https://api.noroff.dev/api/v1/rainy-days";
-const allJackets = await fetchJackets(url);
+const allJackets = await fetchJackets();
 
-loadingIndicator.remove()
+loadingIndicator.remove();
 
 if (allJackets.errors) {
   createError(allJackets, cartItems);
@@ -20,11 +19,11 @@ if (allJackets.errors) {
   updateCart();
 
   prevJackets.forEach((jacket) => {
-  const foundJacket = allJackets.find((item) => {
-    if (item.id === jacket.id) {
-      return jacket;
-    }
+    const foundJacket = allJackets.find((item) => {
+      if (item.id == jacket.id) {
+        return jacket;
+      }
+    });
+    cartItem(foundJacket, cartItems, jacket.quantity);
   });
-  cartItem(foundJacket, cartItems, jacket.quantity);
-});
 }
