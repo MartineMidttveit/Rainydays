@@ -1,9 +1,6 @@
 export default function slideshow () {
     const seasonImages = document.querySelectorAll(".shop-image");
 
-
-
-
     function showSlide(index) {
      
     seasonImages.forEach((image, i) => { 

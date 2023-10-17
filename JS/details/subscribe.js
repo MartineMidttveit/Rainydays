@@ -4,8 +4,6 @@ const subscribeBtn = document.querySelector("#subscribe")
 const subscribeInput = document.querySelector("#emailAddress")
 const invalidEmail = document.querySelector("#failedSub")
 
-
-
 export default function subscribe() {
 
     subscribeBtn.addEventListener("click", function(e) {
