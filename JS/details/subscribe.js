@@ -9,7 +9,6 @@ export default function subscribe() {
     subscribeBtn.addEventListener("click", function(e) {
         e.preventDefault()
 
-
         subscribeInput.value
         console.log(subscribeInput.value)
 

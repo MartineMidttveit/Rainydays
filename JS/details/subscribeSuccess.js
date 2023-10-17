@@ -13,7 +13,5 @@ export default function subscribeSuccess(email) {
 
     discountCode.textContent = "WELCOME10"
     discountCode.style.display = "flex"
-    
-
 }
 
