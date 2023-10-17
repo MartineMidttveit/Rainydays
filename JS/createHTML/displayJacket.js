@@ -141,6 +141,7 @@ export default function displayJacket(jacket, box) {
     jacketImages.cloneNode(true),
     colors.cloneNode(true),
     chooseSize.cloneNode(true),
-    sizes.cloneNode(true)
+    sizes.cloneNode(true),
+    buyNow.cloneNode(true)
   );
 }

@@ -365,6 +365,10 @@ details {
         align-items: center;
         justify-content: center;
     }
+
+    .buy-now {
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
