@@ -14,9 +14,6 @@ const allJackets = await fetchJackets();
 
 loadingIndicators.forEach((loadingIndicator) => loadingIndicator.remove());
 
-// createError(allJackets, newProduct);
-// createError(allJackets, sectionTree);
-
 const allNumbers = [];
 for (let index = 0; index <= 3; index++) {
   const randomNumber = Math.floor(Math.random() * allJackets.length);
@@ -41,7 +38,3 @@ favorite();
 
 subscribe();
 
-//
-// const consumerKey = "ck_3d78534cad4d9042bcd2d574e6322f7a5b1b10ba";
-// const consumerSecret = "cs_efbe898e78435935168e51ccb78e2471bd411be9";
-// const credentials = btoa(consumerKey + ":" + consumerSecret);
