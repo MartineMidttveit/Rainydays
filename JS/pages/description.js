@@ -7,16 +7,13 @@ const loadingIndicator = document.querySelector(".loading-indicator");
 
 loadingIndicator.remove();
 
-const url = "https://api.noroff.dev/api/v1/rainy-days/";
+const url = "https://api.noroff.dev/api/v1/rainy-days/${id}";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-console.log(id);
 
 const jackets = await fetchJackets();
-
-console.log(jackets);
 
 const jacket = jackets.find((jacket) => jacket.id == id);
 console.log(jacket);
