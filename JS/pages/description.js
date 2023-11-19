@@ -7,19 +7,13 @@ const loadingIndicator = document.querySelector(".loading-indicator");
 
 loadingIndicator.remove();
 
-const url = "https://api.noroff.dev/api/v1/rainy-days/${id}";
-
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const jackets = await fetchJackets`/${id}`;
-
-const jacket = jackets.find((jacket) => jacket.id == id);
-
-if (jacket.errors) {
-  createError(jacket, productWrapper);
-} else {
+try {
+  const jacket = await fetchJackets(`/${id}`);
+  console.log(jacket)
   displayJacket(jacket, productWrapper);
   const sizeBtns = document.querySelectorAll(".sizeBtn");
   sizeBtns.forEach((btn) =>
@@ -36,4 +30,11 @@ if (jacket.errors) {
       colorText.textContent = color.dataset.color;
     })
   );
+} catch(error) {
+  createError(error, productWrapper);
+  console.error("An error occurred during fetch:", error);
 }
+
+
+
+
