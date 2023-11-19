@@ -13,10 +13,10 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const jackets = await fetchJackets();
+const jackets = await fetchJackets`/${id}`;
 
 const jacket = jackets.find((jacket) => jacket.id == id);
-console.log(jacket);
+
 if (jacket.errors) {
   createError(jacket, productWrapper);
 } else {

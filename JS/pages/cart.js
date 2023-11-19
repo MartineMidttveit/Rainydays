@@ -5,14 +5,10 @@ import createError from "../createHTML/createError.js";
 
 const cartItems = document.querySelector(".clickedProducts");
 const loadingIndicator = document.querySelector(".loading-indicator");
-
-const allJackets = await fetchJackets();
-
 loadingIndicator.remove();
 
-if (allJackets.errors) {
-  createError(allJackets, cartItems);
-} else {
+try{
+  const allJackets = await fetchJackets();
   const getPrevJackets = localStorage.getItem("jackets");
   let prevJackets = JSON.parse(getPrevJackets);
 
@@ -26,4 +22,13 @@ if (allJackets.errors) {
     });
     cartItem(foundJacket, cartItems, jacket.quantity);
   });
+} catch(error) {
+    createError(error, cartItems);
+    console.error("An error occurred during fetch:", error);
 }
+
+
+
+
+
+

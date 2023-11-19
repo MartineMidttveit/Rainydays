@@ -15,7 +15,7 @@ export default function createError(error, errorBox) {
 
     const errorSpan = document.createElement("span");
     errorSpan.classList.add("bold");
-    errorSpan.textContent = error.statusCode + " " + error.status;
+    errorSpan.textContent = error
 
     const refresh = document.createElement("a");
     refresh.setAttribute("id", "refresh"); 

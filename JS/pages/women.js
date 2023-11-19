@@ -3,14 +3,15 @@ import popularProducts from "../createHTML/popularProducts.js";
 import createError from "../createHTML/createError.js";
 
 const container = document.querySelector(".product-list");
-const womensJackets = await fetchJackets();
-
 const loadingIndicator = document.querySelector(".loading-indicator");
 
 loadingIndicator.remove();
 
-if (womensJackets.errors) {
-  createError(womensJackets, container);
-} else {
+try {
+  const womensJackets = await fetchJackets();
   womensJackets.forEach((jacket) => popularProducts(jacket, container));
+} catch (error) {
+
+  createError(error, container)
+  console.error("An error occurred during fetch:", error);
 }
