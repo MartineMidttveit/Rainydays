@@ -11,9 +11,9 @@ Overview
 
 # GET STARTED
 1. Clone the repo:
-git clone git@github.com:NoroffFEU/Rainydays.git
+git clone git@github.com:MartineMidttveit/Rainydays.git
 
-2. Install the dependencies:
+3. Install the dependencies:
 npm install
 
 # Rainydays
