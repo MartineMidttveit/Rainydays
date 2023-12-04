@@ -1,7 +1,9 @@
 # RAINYDAYS
 ![readme](https://github.com/MartineMidttveit/Rainydays/assets/125905644/62be10a8-0b29-4062-9ed3-9198c0600c0f)
 
-Overview 
+In this project I was tasked to make a website for an online store for a fictional company called Rainydays. 
+The purpose of this project was to learn more about JavaScript and to fetch products from an external API. 
+We were tasked to use Wordpress as our API, with One.com as a host. We also learned more about different plugins for Wordpress, such as E-Commerce. 
 
 ## DESCRIPTION
 
