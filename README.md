@@ -2,20 +2,38 @@
 ![readme](https://github.com/MartineMidttveit/Rainydays/assets/125905644/62be10a8-0b29-4062-9ed3-9198c0600c0f)
 
 Overview 
-# BUILT WITH
+
+## DESCRIPTION
+
+## BUILT WITH
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)
 ![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=HTML5)
 ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
 
-# DESCRIPTION
+## GET STARTED
 
-# GET STARTED
+### Installing
 1. Clone the repo:
+```bash   
 git clone git@github.com:MartineMidttveit/Rainydays.git
-
-3. Install the dependencies:
+```
+2. Install the dependencies:
+```
 npm install
+```
+### Running
+To run the website, run the following commands:
 
-# Rainydays
+```bash
+npm run start
+```
 
-# Rainydays
+## CONTACT
+
+<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Martine Midttveit Instagram" height="30" width="40"/> @martinemidttveit
+
+<a href="https://www.linkedin.com/in/martine-midttveit-467799261/" target="blank">
+  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Martine Midttveit Linkedin" height="30" width="40"/> 
+</a> Martine Midttveit. 
+
+
