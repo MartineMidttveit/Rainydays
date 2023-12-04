@@ -6,7 +6,7 @@ The target demographic, aged between 30 to 50, shares a passion for outdoor acti
 This multifaceted project aimed to cultivate foundational skills in design, HTML, CSS, and JavaScript while delving into the functionality of WordPress as a content management system (CMS).
 
 ## DESCRIPTION
-The initial phase of the projecct centered on crafting the design in Figma. The next task was to code it, only by using HTML and CSS. 
+The initial phase of the project centered on crafting the design in Figma. The next task was to code it, only by using HTML and CSS. 
 Subsequently, we progressed to more advanced stages where WordPress, coupled with an API and hosted on One.com, became the backbone of the website. Here, we integrated JavaScript to dynamically fetch and display products. This phase also deepened our understanding of WordPress functionalities, including exploring various plugins like E-commerce solutions.
 
 ## BUILT WITH
